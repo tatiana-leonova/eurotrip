@@ -1,0 +1,139 @@
+.about-us {
+  background-color: #181617;
+
+  &__title {
+    padding-top: 60px;
+    margin-bottom: 35px;
+
+    @media (min-width: $width-tablet) {
+      padding-top: 85px;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 58px;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-bottom: 47px;
+    }
+  }
+
+  &__list {
+    @include no-list;
+    padding-bottom: 30px;
+
+    @media (min-width: $width-tablet) {
+      padding-bottom: 70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 55px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    @include text(14px, 20px);
+    font-weight: 300;
+    background-color: #1f1c1d;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 360px;
+    margin-bottom: 30px;
+
+    @media (min-width: $width-tablet) {
+      @include text(16px, 26px);
+      width: 360px;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin: 0;
+
+      &:not(:nth-child(3)) {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    text-decoration: none;
+    color: $white;
+    background-color: #1f1c1d;
+    transition: 0.3s;
+    padding: 148px 30px 64px 30px;
+    min-width: 260px;
+    min-height: 218px;
+    display: block;
+
+    @media (min-width: $width-desktop) {
+      padding: 192px 30px 30px 30px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $text;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__item-text {
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  &__item-icon {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+
+    &--veterinary {
+      top: 40px;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 88px;
+
+      @media (min-width: $width-desktop) {
+        top: 50px;
+        width: 98px;
+        height: 107px;
+      }
+    }
+
+    &--consultation {
+      top: 64px;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 71px;
+
+      @media (min-width: $width-desktop) {
+        top: 52px;
+        width: 107px;
+        height: 95px;
+      }
+    }
+
+    &--nutrition {
+      top: 55px;
+      left: calc(50% - 28px);
+      width: 57px;
+      height: 88px;
+
+      @media (min-width: $width-desktop) {
+        top: 50px;
+        width: 70px;
+        height: 108px;
+      }
+    }
+  }
+}
