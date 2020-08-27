@@ -1,0 +1,22 @@
+.package-prices {
+  @include text(16px, 24px);
+  font-weight: 400;
+  border: 1px solid $border;
+  border-radius: 6px;
+}
+
+.package-prices__title {
+  @include text(28px, 38px);
+  font-weight: 600;
+  letter-spacing: -1.27273px;
+}
+
+.package-prices__price {
+  @include text(25px, 34px);
+  font-weight: 700;
+  display: block;
+}
+
+.package-prices__list {
+  @include no-list;
+}

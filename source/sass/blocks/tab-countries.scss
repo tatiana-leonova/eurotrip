@@ -1,0 +1,16 @@
+.tab-countries {
+  @include no-list;
+}
+
+.tab-countries__item-link {
+  @include text(20px, 24px);
+  font-weight: 500;
+  text-decoration: none;
+  color: $dark;
+  opacity: 0.3;
+
+  &--active {
+    color: $accent-main;
+    opacity: 1;
+  }
+}

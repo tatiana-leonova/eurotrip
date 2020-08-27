@@ -1,0 +1,19 @@
+.promo {
+  background-color: #7f9cc2;
+  background-image: url("../img/bg-promo-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 860px;
+  background-position: center 20%;
+}
+
+.promo__title {
+  @include text(55px, 80px);
+  font-weight: 600;
+  color: $white;
+}
+
+.promo__text {
+  @include text(16px, 27px);
+  font-weight: 400;
+  color: $white;
+}

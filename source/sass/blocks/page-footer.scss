@@ -1,0 +1,25 @@
+.page-footer__travels-title,
+.page-footer__contacts-title,
+.page-footer__corporate-title {
+  @include text(18px, 34px);
+  font-weight: 600;
+  color: $dark;
+}
+
+.page-footer__travels-list {
+  @include no-list;
+}
+
+.page-footer__travels-item,
+.page-footer__corporate-text {
+  @include text(14px, 24px);
+  font-weight: 400;
+  color: $text-footer;
+}
+
+.page-footer__email,
+.page-footer__tel {
+  @include text(14px, 17px);
+  font-weight: 400;
+  color: $accent-main;
+}

@@ -1,0 +1,25 @@
+.reviews {
+  background-image: url("../img/bg-reviews-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 860px;
+  background-position: center;
+}
+
+.reviews__title {
+  @include text(30px, 37px);
+  font-weight: 500;
+  color: $dark;
+}
+
+.reviews__text {
+  @include text(14px, 28px);
+  font-weight: 400;
+}
+
+.reviews__author {
+  @include text(16px, 24px);
+  font-weight: 500;
+  font-family: $font-secondary;
+  color: $dark;
+  font-style: normal;
+}

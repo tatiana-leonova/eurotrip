@@ -1,0 +1,22 @@
+.form__title {
+  @include text(25px, 32px);
+  font-weight: 600;
+  text-align: center;
+  color: $dark;
+}
+
+.frrm__text {
+  @include text(16px, 24px);
+  font-weight: 600;
+  text-align: center;
+  color: $dark;
+}
+
+.form__input {
+  &::placeholder {
+    @include text(17px, 17px);
+    font-weight: 400;
+    color: $dark;
+    background-color: inherit;
+  }
+}

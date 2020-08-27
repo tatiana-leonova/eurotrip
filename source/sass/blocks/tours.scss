@@ -1,0 +1,23 @@
+.tours__title {
+  @include text(55px, 80px);
+  font-weight: 600;
+  color: $dark;
+}
+
+.tours__text {
+  @include text(16px, 28px);
+  font-weight: 400;
+}
+
+.tours__list {
+  @include no-list;
+}
+
+.tours__item-title {
+  @include text(24px, 29px);
+  font-weight: 400;
+  color: $dark;
+  background-color: $white;
+  padding: 15;
+  text-align: center;
+}

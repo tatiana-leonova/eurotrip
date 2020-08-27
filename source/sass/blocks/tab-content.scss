@@ -1,0 +1,11 @@
+.tab-content__title {
+  @include text(55px, 90px);
+  font-weight: 600;
+  letter-spacing: -1.245px;
+  color: $dark;
+}
+
+.tab-content__text {
+  @include text(16px, 28px);
+  font-weight: 400;
+}

@@ -7,11 +7,11 @@
   <meta name="description"
     content="Недорогие туры по Европе. Вас ждет: море, горы, а также потрясающая красота природы. Персональный подбор и сопровождение. Звоните +7 (499)-784-684-46">
   <title>Путешествие по Европе</title>
-  <!-- <link rel="preload" href="fonts/Roboto.woff2" as="font">
-  <link rel="preload" href="fonts/Robotobold.woff2" as="font">
-  <link rel="preload" href="fonts/Robotolight.woff2" as="font">
-  <link rel="preload" href="fonts/Robotomedium.woff2" as="font">
-  <link rel="preload" href="fonts/yesevaone.woff2" as="font"> -->
+  <!-- <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font">
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font"> -->
   <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -28,12 +28,12 @@
         <img class="main-nav__logo-img" src="img/logo.svg" width="57" height="22"
           alt="Логотип сайта Way - туры по Европе">
       </a>
-      <ul class="main-nav__list site-list">
-        <li class="main-nav__item site-list__item">
-          <a class="site-list__item-link" href="#">О путешествии</a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#">О путешествии</a>
         </li>
-        <li class="main-nav__item site-list__item">
-          <a class="site-list__item-link" href="#">Цены</a>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#">Цены</a>
         </li>
       </ul>
     </nav>
@@ -67,41 +67,61 @@
           <h1 class="tours__title">Места посещения</h1>
           <p class="tours__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           <ul class="tours__list">
-            <li class="tours__item">Греция</li>
-            <li class="tours__item">Албания</li>
-            <li class="tours__item">Македония</li>
-            <li class="tours__item">Черногория</li>
-            <li class="tours__item">Хорватия</li>
+            <li class="tours__item">
+              <img src="img/tours-greece-desktop@1x.jpg" width="350" height="430"
+                alt="Изображение красивых мест Греции">
+              <h3 class="tours__item-title">Греция</h3>
+            </li>
+            <li class="tours__item">
+              <img src="img/tours-albania-desktop@1x.jpg" width="350" height="430"
+                alt="Изображение красивых мест Албании">
+              <h3 class="tours__item-title">Албания</h3>
+            </li>
+            <li class="tours__item">
+              <img src="img/tours-macedonia-desktop@1x.jpg" width="350" height="430"
+                alt="Изображение красивых мест Македонии">
+              <h3 class="tours__item-title">Македония</h3>
+            </li>
+            <li class="tours__item">
+              <img src="img/tours-montenegro-desktop@1x.jpg" width="350" height="430"
+                alt="Изображение красивых мест Черногории">
+              <h3 class="tours__item-title">Черногория</h3>
+            </li>
+            <li class="tours__item">
+              <img src="img/tours-croatia-desktop@1x.jpg" width="350" height="430"
+                alt="Изображение красивых мест Хорватии">
+              <h3 class="tours__item-title">Хорватия</h3>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="countrys">
+    <section class="countries">
       <div class="container">
-        <div class="countrys__wrapper">
+        <div class="countries__wrapper">
           <h2 class="visually-hidden">Выбор тура в страны Европы</h2>
           <!-- Tabs -->
-          <ul id="tab-list" class="countrys__tab-list tab">
-            <li class="tab__item">
-              <a class="tab___item-link" href="#greece">Греция</a>
+          <ul id="tab-list" class="countries__tab-list tab-countries">
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link tab-countries__item-link--active" href="#greece">Греция</a>
             </li>
-            <li class="tab__item">
-              <a class="tab__item-link" href="#albania">Албания</a>
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link" href="#albania">Албания</a>
             </li>
-            <li class="tab__item">
-              <a class="tab__item-link" href="#macedonia">Македония</a>
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link" href="#macedonia">Македония</a>
             </li>
-            <li class="tab__item">
-              <a class="tab__item-link" href="#montenegro">Черногория</a>
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link" href="#montenegro">Черногория</a>
             </li>
-            <li class="tab__item">
-              <a class="tab__item-link" href="#croatia">Хорватия</a>
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link" href="#croatia">Хорватия</a>
             </li>
           </ul>
 
           <!-- Tab content -->
-          <div class="countrys__content-list tab-content">
+          <div class="countries__content-list tab-content">
             <div class="tab-content__item tab-active" id="greece">
               <h2 class="tab-content__title">Греция</h2>
               <p class="tab-content__text">
@@ -131,7 +151,7 @@
             </div>
           </div>
 
-          <div class="countrys__price price">
+          <div class="countries__price price">
             <div class="price__content">
               <h2 class="price__title">Цены</h2>
               <p class="price__text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от
@@ -163,6 +183,7 @@
                   <li class="package-prices__item">
                     Экскурсии по удивительно красивым местам Европы
                   </li>
+                  <a class="package-prices__button button" href="#">купить тур сейчас</a>
                 </ul>
 
               <li class="price__item package-prices">
@@ -199,15 +220,14 @@
     <section class="feedback">
       <div class="container">
         <div class="feedback__wrapper">
-          <h2 class="visually-hidden">Форма для обратной связи</h2>
-          <p>У Вас остались вопросы?</p>
-          <p>Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-          <form class="feedback__form form" method="get" action="https://echo.htmlacademy.ru">
-            <label class="form__label" for="tel"></label>
-            <input class="form__input" type="text" name="tel" id="tel" placeholder="Введите 10 цифр номера" required>
-            <label class="form__label" for="email"></label>
-            <input class="form__input" type="text" name="email" id="email" placeholder="E-mail">
-            <button class="form__button button" type="submit">отправить</button>
+          <form class="feedback__form form" method="get" action="https://echo.htmlacademy.ru"></form>
+          <h2 class="form__title">У Вас остались вопросы?</h2>
+          <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+          <label class="form__label" for="tel"></label>
+          <input class="form__input" type="text" name="tel" id="tel" placeholder="Введите 10 цифр номера" required>
+          <label class="form__label" for="email"></label>
+          <input class="form__input" type="text" name="email" id="email" placeholder="E-mail">
+          <button class="form__button button" type="submit">отправить</button>
           </form>
         </div>
       </div>
@@ -243,11 +263,13 @@
           </ul>
         </div>
         <div class="page-footer__contacts">
+          <h4 class="page-footer__contacts-title">Наши контакты</h4>
           <a class="page-footer__email" href="puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
           <a class="page-footer__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
         </div>
 
         <div class="page-footer__corporate">
+          <h4 class="page-footer__corporate-title">Корпоративные путешествия</h4>
           <p class="page-footer__corporate-text">
             Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают
             компанию, помогают

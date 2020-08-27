@@ -1,18 +1,24 @@
 // Шрифты
-$font-main: "Roboto", "Arial", sans-serif;
-$font-secondary: "Yeseva One", "Arial", sans-serif;
+$font-main: "Montserrat", "Arial", sans-serif;
+$font-secondary: "Poppins", "Arial", sans-serif;
 
 // Цвета
+$accent-main: #fe7865;
+$accent-hover: #f17d4b;
+$light: #fbf8f8;
+$dark: #2c2e3f;
+$pitch-dark: #141517;
 $black: #000000;
-$text: #a07b50;
 $white: #ffffff;
-$text-question: #ddd0c3;
+$text: rgba(44, 46, 63, 0.7);
+$text-footer: rgba(20, 21, 23, 0.5);
+$border: rgba(44, 46, 63, 0.3);
 
 // Размеры
 $width-mobile: 320px;
 $width-mobile-only: 767px;
 $width-tablet: 768px;
-$width-tablet-only: 1285px;
-$width-desktop: 1286px;
+$width-tablet-only: 1023px;
+$width-desktop: 1024px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

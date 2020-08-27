@@ -1,0 +1,10 @@
+.main-nav__list {
+  @include no-list;
+}
+
+.main-nav__item-link {
+  @include text(14px, 17px);
+  font-weight: 500;
+  text-decoration: none;
+  color: $pitch-dark;
+}
