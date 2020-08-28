@@ -1,23 +1,60 @@
 .tours__title {
   @include text(55px, 80px);
   font-weight: 600;
+  letter-spacing: -1.245px;
   color: $dark;
+  width: 350px;
+  margin: 0;
+  position: relative;
+  padding-bottom: 48px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 229px;
+    height: 4px;
+    background-color: $accent-main;
+  }
 }
 
 .tours__text {
   @include text(16px, 28px);
   font-weight: 400;
+  letter-spacing: -0.466667px;
+  width: 350px;
+  margin-bottom: 55px;
 }
 
 .tours__list {
   @include no-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tours__item {
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.tours__item:not(:nth-child(3n)):not(:last-child) {
+  margin-right: 60px;
 }
 
 .tours__item-title {
   @include text(24px, 29px);
   font-weight: 400;
+  letter-spacing: -0.415px;
   color: $dark;
+  position: absolute;
+  padding-top: 16px;
+  padding-bottom: 25px;
+  width: 215px;
   background-color: $white;
-  padding: 15;
   text-align: center;
+  margin: 0;
+  bottom: 0;
+  left: 69px;
 }
