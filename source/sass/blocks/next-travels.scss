@@ -1,0 +1,10 @@
+.next-travels__list {
+  @include no-list;
+}
+
+.next-travels__link {
+  @include text(14px, 24px);
+  font-weight: 400;
+  color: $text-footer;
+  text-decoration: none;
+}

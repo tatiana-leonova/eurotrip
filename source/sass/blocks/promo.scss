@@ -6,14 +6,42 @@
   background-position: center 20%;
 }
 
+.promo__text-wrapper {
+  width: 470px;
+  padding-top: 187px;
+  margin-left: auto;
+}
+
 .promo__title {
   @include text(55px, 80px);
   font-weight: 600;
+  letter-spacing: -1.10667px;
   color: $white;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .promo__text {
   @include text(16px, 27px);
   font-weight: 400;
+  letter-spacing: -0.466667px;
   color: $white;
+  width: 385px;
+  margin-bottom: 34px;
+}
+
+.promo__button {
+  padding-right: 177px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 16px;
+    top: 40%;
+    right: 40px;
+  }
 }

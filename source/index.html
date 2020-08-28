@@ -7,11 +7,11 @@
   <meta name="description"
     content="Недорогие туры по Европе. Вас ждет: море, горы, а также потрясающая красота природы. Персональный подбор и сопровождение. Звоните +7 (499)-784-684-46">
   <title>Путешествие по Европе</title>
-  <!-- <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
-  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
-  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font">
-  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font">
-  <link rel="preload" href="fonts/poppins-regular.woff2" as="font"> -->
+  <link rel="preload" href="fonts/MontserratRegular.woff2" as="font">
+  <link rel="preload" href="fonts/MontserratMedium.woff2" as="font">
+  <link rel="preload" href="fonts/MontserratSemibold.woff2" as="font">
+  <link rel="preload" href="fonts/MontserratBold.woff2" as="font">
+  <!-- <link rel="preload" href="fonts/poppins-regular.woff2" as="font"> -->
   <link rel="stylesheet" href="css/style.min.css">
 
   <!-- Pixel Glass -->
@@ -53,22 +53,31 @@
   </div>
 
   <header class="page-header">
-    <nav class="main-nav main-nav--opened main-nav--nojs">
-      <a class="main-nav__logo">
-        <img class="main-nav__logo-img" src="img/logo.svg" width="57" height="22"
-          alt="Логотип сайта Way - туры по Европе">
-      </a>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__item-link" href="#">О путешествии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link" href="#">Цены</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="page-header__info">
-      <a class="page-header__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    <div class="page-header__wrapper container">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-img" src="img/logo.svg" width="57" height="22"
+            alt="Логотип сайта Way - туры по Европе">
+        </a>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">О путешествии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Цены</a>
+            </li>
+          </ul>
+          <div class="main-nav__info">
+            <a class="main-nav__phone" href="tel:+749978468446">
+              <svg class="main-nav__phone-icon" width="30" height="30">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+              <span class="main-nav__phone-text">+7 (499) -784-684-46</span>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -77,17 +86,17 @@
     <section class="promo">
       <div class="container">
         <div class="promo__wrapper">
-          <div class="container">
-            <div class="promo__text-wrapper">
-              <h1 class="promo__title">Путешествие по Европе</h1>
-              <p class="promo__text">
-                В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
-                природы.
-              </p>
-              <button class="promo__button button">смотреть тур</button>
-            </div>
+          <!-- <div class="container"> -->
+          <div class="promo__text-wrapper">
+            <h1 class="promo__title">Путешествие по&nbsp;Европе</h1>
+            <p class="promo__text">
+              В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
+              природы.
+            </p>
+            <button class="promo__button button">смотреть тур</button>
           </div>
         </div>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -268,28 +277,59 @@
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__wrapper">
-        <div class="page-footer__travels">
-          <h4 class="page-footer__travels-title">Следующие путешествия</h4>
-          <ul class="page-footer__travels-list">
-            <li class="page-footer__travels-item">Марсель</li>
-            <li class="page-footer__travels-item">Ним</li>
-            <li class="page-footer__travels-item">Монпелье</li>
-            <li class="page-footer__travels-item">Барселона</li>
-            <li class="page-footer__travels-item">Пальма</li>
+        <div class="page-footer__travels next-travels">
+          <h4 class="next-travels__title">Следующие путешествия</h4>
+          <ul class="next-travels__list">
+            <li class="next-travels__item">
+              <class class="next-travels__link" href="#">Марсель</a>
+            </li>
+            <l class="next-travels__item">
+              <a class="next-travels__link" href="#">Ним</a>
+              <li>
+              <li class="next-travels__item">
+                <a class="next-travels__link" href="#">Монпелье</a>
+              </li>
+              <li class="next-travels__item">
+                <a class="next-travels__link" href="#">Барселона</a>
+              </li>
+              <li class="next-travels__item">
+                <a class="next-travels__link" href="#">Пальма</a>
+              </li>
           </ul>
-          <ul class="page-footer__travels-list">
-            <li class="page-footer__travels-item">Сардиния</li>
-            <li class="page-footer__travels-item">Палермо</li>
-            <li class="page-footer__travels-item">Катания</li>
-            <li class="page-footer__travels-item">Неаполь</li>
-            <li class="page-footer__travels-item">Рим</li>
+          <ul class="next-travels__list">
+            <li class="next-travels__item">
+              <a class="next-travels__link" href="#">Сардиния</a>
+            </li>
+            <li class="next-travels__item">
+              <a class="next-travels__link" href="#">Палермо</a>
+            </li>
+            <li class="next-travels__item">
+              <a class="next-travels__link" href="#">Катания</a>
+            </li>
+            <li class="next-travels__item">
+              <a class="next-travels__link" href="#">Неаполь</a>
+            </li>
+            <l class="next-travels__item">
+              <a class="next-travels__link" href="#">Рим</a>
+              <li>
           </ul>
-          <ul class="page-footer__travels-list">
-            <li class="page-footer__travels-item">Корс</li>
-            <li class="page-footer__travels-item">Ницца</li>
-            <li class="page-footer__travels-item">Монако</li>
-            <li class="page-footer__travels-item">Динь-ле-Бен</li>
-            <li class="page-footer__travels-item">Гренобль</li>
+          <ul class="next-travels__list">
+            <a class="next-travels__item">
+              <a class="next-travels__link" href="#">Корс</a>
+              <li>
+              <li class="next-travels__item">
+                <aclass class="next-travels__link" href="#">Ницца
+            </a>
+            </li>
+            <li class="next-travels__item">
+              <a class="next-travels__link" href="#">Монако</a>
+            </li>
+            <li class="next-travels__item">
+              <a class="next-travels__link" href="#">Динь-ле-Бен</a>
+            </li>
+            <li class="next-travels__item">
+              <a class="next-travels__link" href="#">Гренобль</a>
+            </li>
           </ul>
         </div>
         <div class="page-footer__contacts">

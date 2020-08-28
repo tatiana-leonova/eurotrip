@@ -16,9 +16,10 @@ $border: rgba(44, 46, 63, 0.3);
 
 // Размеры
 $width-mobile: 320px;
-$width-mobile-only: 767px;
+$width-mobile-max: 767px;
 $width-tablet: 768px;
-$width-tablet-only: 1023px;
-$width-desktop: 1024px;
+$width-tablet-max: 1023px;
+$width-desktop-min: 1024px;
+$width-desktop: 1230px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

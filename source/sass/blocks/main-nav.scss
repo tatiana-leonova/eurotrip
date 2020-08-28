@@ -1,5 +1,26 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__logo {
+  display: block;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 900px;
+}
+
 .main-nav__list {
   @include no-list;
+  display: flex;
+}
+
+.main-nav__item {
+  margin-right: 47px;
+  max-width: 140px;
 }
 
 .main-nav__item-link {
@@ -7,4 +28,21 @@
   font-weight: 500;
   text-decoration: none;
   color: $pitch-dark;
+}
+
+.main-nav__phone {
+  @include text(18px, 32px);
+  font-weight: 400;
+  color: $accent-main;
+  position: relative;
+  padding-left: 40px;
+  display: block;
+  margin-right: 15px;
+}
+
+
+.main-nav__phone-icon {
+  position: absolute;
+  top: 0;
+  left: 1px;
 }
