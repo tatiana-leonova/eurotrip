@@ -1,25 +1,71 @@
 .reviews {
   background-image: url("../img/bg-reviews-desktop@1x.jpg");
   background-repeat: no-repeat;
-  min-height: 860px;
-  background-position: center;
+  background-position: 27% 100%;
+  width: 808px;
+  min-height: 596px;
+}
+
+.reviews__wrapper {
+  width: 382px;
+  background-color: $white;
+  padding: 30px;
+  margin-left: auto;
+  margin-top: 105px;
 }
 
 .reviews__title {
   @include text(30px, 37px);
   font-weight: 500;
+  letter-spacing: -0.691667px;
   color: $dark;
+  margin: 0;
+  position: relative;
+  padding-bottom: 18px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 68px;
+    height: 1px;
+    background-color: $accent-main;
+  }
+}
+
+.reviews__item {
+  margin: 0;
 }
 
 .reviews__text {
   @include text(14px, 28px);
   font-weight: 400;
+  letter-spacing: -0.408333px;
+  margin-bottom: 40px;
 }
 
 .reviews__author {
   @include text(16px, 24px);
   font-weight: 500;
+  letter-spacing: -0.466667px;
   font-family: $font-secondary;
   color: $dark;
   font-style: normal;
+  padding-left: 55px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    top: -12px;
+    left: 1px;
+    background-image: url("../img/reviews-vgolitzina@1x.png");
+
+    &--greece {
+      background-image: url("../img/reviews-vgolitzina@1x.png");
+    }
+  }
 }

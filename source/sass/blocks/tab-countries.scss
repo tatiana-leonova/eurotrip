@@ -1,16 +1,35 @@
 .tab-countries {
   @include no-list;
+  display: flex;
+  border-bottom: 1px solid $border;
+  max-width: 905px;
+  margin-bottom: 90px;
 }
+
+// .countries__wrapper {
+//   margin-bottom: 40px;
+// }
+
+.tab-countries__item {
+  margin-right: 100px;
+  padding-bottom: 10px;
+}
+
+// .tab-countries__item:not(:last-child): {
+//   margin-right: 100px;
+//   padding-left: 50px;
+//   padding-right: 50px;
+//   // border-bottom: 1px solid $border;
+// }
 
 .tab-countries__item-link {
   @include text(20px, 24px);
   font-weight: 500;
+  letter-spacing: -0.415px;
   text-decoration: none;
-  color: $dark;
-  opacity: 0.3;
+  color: $border;
 
   &--active {
     color: $accent-main;
-    opacity: 1;
   }
 }

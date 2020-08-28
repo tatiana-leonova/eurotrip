@@ -1,11 +1,34 @@
+.tab-content__item {
+  display: flex;
+}
+
+.tab-content__wrapper-text {
+  width: 370px;
+}
+
 .tab-content__title {
   @include text(55px, 90px);
   font-weight: 600;
   letter-spacing: -1.245px;
   color: $dark;
+  margin: 0;
+  padding-bottom: 32px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $accent-main;
+  }
 }
 
 .tab-content__text {
   @include text(16px, 28px);
   font-weight: 400;
+  letter-spacing: -0.466667px;
+  margin-bottom: 50px;
 }
