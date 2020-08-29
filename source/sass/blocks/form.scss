@@ -41,9 +41,35 @@
     color: $dark;
     background-color: inherit;
   }
+}
 
-  &--tel {
-    padding-left: 49px;
+.form__input--tel {
+  padding-left: 49px;
+}
+
+.form__label--tel {
+  position: relative;
+
+  &::after {
+    @include text(14px, 17px);
+    position: absolute;
+    content: "+7";
+    color: $dark;
+    font-family: $font-main;
+    font-weight: 400;
+    top: 18px;
+    left: 26px;
+  }
+
+  &::before {
+    @include text(14px, 17px);
+    position: absolute;
+    content: "*";
+    color: $accent-main;
+    font-family: $font-main;
+    font-weight: 400;
+    top: 10px;
+    left: 15px;
   }
 }
 
@@ -52,7 +78,3 @@
   padding: 18px 40px;
   margin: 0 auto;
 }
-
-// .form__button-wrapper {
-//   margin: 0 auto;
-// }

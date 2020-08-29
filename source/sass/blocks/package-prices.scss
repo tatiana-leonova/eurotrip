@@ -10,6 +10,11 @@
   padding-bottom: 28px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $width-desktop-only) {
+    width: 288px;
+    padding: 20px;
+  }
 }
 
 .package-prices__title-price {
@@ -47,6 +52,10 @@
     width: 310px;
     height: 1px;
     background-color: $border;
+
+    @media (max-width: $width-desktop-only) {
+      width: 248px;
+    }
   }
 }
 
@@ -76,5 +85,9 @@
 .package-prices__button {
   display: block;
   text-align: center;
-  // align-self: flex-end;
+
+  @media (max-width: $width-desktop-only) {
+    @include text(10px, 12px);
+    padding: 20px;
+  }
 }

@@ -40,7 +40,15 @@
 }
 
 .tours__item:not(:nth-child(3n)):not(:last-child) {
-  margin-right: 60px;
+  @media (min-width: $width-desktop) {
+    margin-right: 60px;
+  }
+}
+
+.tours__item:not(:nth-child(2n)) {
+  @media (max-width: $width-desktop-only) {
+    margin-right: 60px;
+  }
 }
 
 .tours__item-title {

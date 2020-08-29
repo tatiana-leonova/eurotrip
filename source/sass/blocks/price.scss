@@ -72,4 +72,8 @@
   @include no-list;
   display: flex;
   margin-right: 79px;
+
+  @media (max-width: $width-desktop-only) {
+    margin-right: 40px;
+  }
 }

@@ -3,13 +3,18 @@
   justify-content: space-between;
   padding-left: 13px;
   padding-top: 17px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 
 .page-footer__contacts {
   width: 310px;
   margin-left: 65px;
   border-right: 1px solid #d7d9df;
+
+  @media (max-width: $width-desktop-only) {
+    margin-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .page-footer__contacts-title,
@@ -66,6 +71,10 @@
 .page-footer__corporate {
   width: 360px;
   padding-left: 31px;
+
+  @media (max-width: $width-desktop-only) {
+    padding-left: 20px;
+  }
 }
 
 .page-footer__corporate-text {

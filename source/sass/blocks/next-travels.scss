@@ -1,17 +1,6 @@
 .next-travels {
   width: 388px;
-  // position: relative;
   border-right: 1px solid #d7d9df;
-
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-  //   width: 1px;
-  //   height: auto;
-  //   background-color: #d7d9df;
-  //   top: 0;
-  //   right: 0;
-  // }
 }
 
 .next-travels__wrapper {
@@ -21,6 +10,10 @@
 .next-travels__list {
   @include no-list;
   margin-right: 33px;
+
+  @media (max-width: $width-desktop-only) {
+    margin-right: 15px;
+  }
 }
 
 .next-travels__title {
