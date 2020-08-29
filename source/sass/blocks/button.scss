@@ -8,4 +8,10 @@
   padding: 30px 40px;
   letter-spacing: 2px;
   text-decoration: none;
+
+  @media (max-width: $width-tablet-max) {
+    @include text(10px, 12px);
+    font-weight: 500;
+    padding: 20px 30px;
+  }
 }
