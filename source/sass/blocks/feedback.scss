@@ -1,21 +1,11 @@
-// .feedback__title {
-//   @include text(25px, 32px);
-//   font-weight: 600;
-//   text-align: center;
-//   color: $dark;
-// }
-
-// .feedback__text {
-//   @include text(16px, 24px);
-//   font-weight: 600;
-//   text-align: center;
-//   color: $dark;
-// }
-
-.feedback__wrapper {
-  // background-color: $accent-main;
+.feedback {
   background-image: url("../img/bg-feedback-desktop@1x.jpg");
   background-repeat: no-repeat;
-  min-height: 860px;
-  background-position: center 20%;
+  background-position: 42px 35%;
+  padding-bottom: 220px;
+}
+
+.feedback__wrapper {
+  padding-top: 150px;
+  margin-right: -12px;
 }
