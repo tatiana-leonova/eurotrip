@@ -12,22 +12,17 @@
     position: absolute;
     bottom: 15px;
     left: 0;
-    width: 900px;
+    width: 90%;
     height: 1px;
     background-color: $border;
-
-    @media (max-width: $width-desktop-only) {
-      width: 870px;
-    }
   }
 }
 
 .tab-countries__item {
   padding-bottom: 10px;
-  margin-right: 100px;
 
-  @media (max-width: $width-desktop-only) {
-    margin-right: 90px;
+  &:not(:last-child) {
+    margin-right: 9.9%;
   }
 }
 

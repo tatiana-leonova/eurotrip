@@ -37,6 +37,11 @@
 .tours__item {
   position: relative;
   margin-bottom: 90px;
+
+  @media (max-width: $width-desktop-only) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .tours__item:not(:nth-child(3n)):not(:last-child) {
@@ -45,11 +50,11 @@
   }
 }
 
-.tours__item:not(:nth-child(2n)) {
-  @media (max-width: $width-desktop-only) {
-    margin-right: 60px;
-  }
-}
+// .tours__item:not(:nth-child(2n)) {
+//   @media (min-width: $width-desktop-min) {
+//     margin-right: 60px;
+//   }
+// }
 
 .tours__item-title {
   @include text(24px, 29px);
@@ -65,4 +70,9 @@
   margin: 0;
   bottom: 0;
   left: 69px;
+
+  @media (max-width: $width-desktop-only) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }

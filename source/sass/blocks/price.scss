@@ -4,8 +4,9 @@
 
 .price__content {
   order: 3;
-  width: 310px;
+  width: 291px;
   padding-top: 113px;
+  margin-left: auto;
 }
 
 .price__title {
@@ -46,7 +47,7 @@
   color: $dark;
   letter-spacing: 1px;
   margin-bottom: 13px;
-  padding-left: 50px;
+  padding-left: 17%;
 }
 
 .price__contacts-tel {
@@ -71,9 +72,4 @@
 .price__list {
   @include no-list;
   display: flex;
-  margin-right: 79px;
-
-  @media (max-width: $width-desktop-only) {
-    margin-right: 40px;
-  }
 }

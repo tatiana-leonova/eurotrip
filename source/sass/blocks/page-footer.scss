@@ -8,13 +8,9 @@
 
 .page-footer__contacts {
   width: 310px;
-  margin-left: 65px;
+  // width: 26.7%;
+  margin-left: 5%;
   border-right: 1px solid #d7d9df;
-
-  @media (max-width: $width-desktop-only) {
-    margin-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 .page-footer__contacts-title,
@@ -69,12 +65,8 @@
 }
 
 .page-footer__corporate {
-  width: 360px;
-  padding-left: 31px;
-
-  @media (max-width: $width-desktop-only) {
-    padding-left: 20px;
-  }
+  width: 31.5%;
+  padding-left: 3%;
 }
 
 .page-footer__corporate-text {
