@@ -1,26 +1,27 @@
 .tab-countries {
   @include no-list;
   display: flex;
-  border-bottom: 1px solid $border;
-  max-width: 905px;
-  margin-bottom: 90px;
-}
+  flex-wrap: wrap;
+  max-width: 1002px;
+  margin-bottom: 73px;
+  padding-bottom: 17px;
+  position: relative;
 
-// .countries__wrapper {
-//   margin-bottom: 40px;
-// }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 900px;
+    height: 1px;
+    background-color: $border;
+  }
+}
 
 .tab-countries__item {
-  margin-right: 100px;
   padding-bottom: 10px;
+  margin-right: 100px;
 }
-
-// .tab-countries__item:not(:last-child): {
-//   margin-right: 100px;
-//   padding-left: 50px;
-//   padding-right: 50px;
-//   // border-bottom: 1px solid $border;
-// }
 
 .tab-countries__item-link {
   @include text(20px, 24px);
