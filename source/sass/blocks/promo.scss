@@ -9,7 +9,8 @@
   @media (max-width: $width-tablet-max) {
     background-image: url("../img/bg-promo-tablet@1x.jpg");
     min-height: 344px;
-    background-position: center 0;
+    background-position: center 100%;
+    background-size: cover;
   }
 }
 
@@ -19,9 +20,10 @@
   margin-left: auto;
 
   @media (max-width: $width-tablet-max) {
-    margin: auto;
     padding-top: 58px;
     text-align: center;
+    width: 700px;
+    margin: auto;
   }
 }
 
@@ -36,7 +38,7 @@
   @media (max-width: $width-tablet-max) {
     @include text(30px, 45px);
     letter-spacing: normal;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 }
 
@@ -52,8 +54,8 @@
     @include text(16px, 27px);
     letter-spacing: -0.466667px;
     width: 435px;
-    padding-left: 35px;
-    margin-bottom: 9px;
+    margin: auto;
+    margin-bottom: 10px;
   }
 }
 
