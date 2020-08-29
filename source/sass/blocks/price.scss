@@ -1,5 +1,7 @@
 .price {
-  display: flex;
+  @media (min-width: $width-desktop-min) {
+    display: flex;
+  }
 }
 
 .price__content {

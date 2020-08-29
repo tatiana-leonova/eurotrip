@@ -1,6 +1,7 @@
 .main-nav {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .main-nav__logo {
@@ -11,16 +12,51 @@
   display: flex;
   justify-content: flex-end;
   width: 900px;
+  position: relative;
 }
 
 .main-nav__list {
   @include no-list;
   display: flex;
+
+  @media (max-width: $width-tablet-max) {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 320px;
+    min-height: 500px;
+    background-color: $white;
+    animation: emersion 0.5s;
+    padding-top: 135px;
+    padding-bottom: 50px;
+  }
 }
 
 .main-nav__item {
   margin-right: 47px;
-  max-width: 140px;
+
+  @media (min-width: $width-desktop-min) {
+    max-width: 140px;
+  }
+
+  @media (max-width: $width-tablet-max) {
+    padding: 17px 60px 17px 17px;
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 33%;
+      right: 20px;
+      background-image: url("../img/arrow-right.svg");
+      width: 25px;
+      height: 25px;
+    }
+  }
 }
 
 .main-nav__item-link {
@@ -28,6 +64,17 @@
   font-weight: 500;
   text-decoration: none;
   color: $pitch-dark;
+
+  @media (max-width: $width-tablet-max) {
+    @include text(20px, 28px);
+    font-weight: 600;
+  }
+}
+
+.main-nav__info {
+  @media (max-width: $width-tablet-max) {
+    display: none;
+  }
 }
 
 .main-nav__phone {
@@ -40,9 +87,89 @@
   margin-right: 15px;
 }
 
-
 .main-nav__phone-icon {
   position: absolute;
   top: 0;
   left: 1px;
+}
+
+// JS меню
+.main-nav__toggle {
+  @media (max-width: $width-tablet-max) {
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    display: block;
+    width: 73px;
+    height: 50px;
+    background-color: $accent-main;
+    padding: 20px 30px;
+    cursor: pointer;
+    border: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      top: 10px;
+      right: 20px;
+      background-image: url("../img/menu-open.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// .main-nav--opened .main-nav__toggle {
+//   @media (max-width: $width-tablet-max) {
+//     width: 21px;
+//     height: 20px;
+//     background-image: url("../img/menu-open.svg");
+//     background-repeat: no-repeat;
+//   }
+// }
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: $width-tablet-max) {
+    display: none;
+  }
+}
+
+// Нужный класс (убирает иконку меню когда JS не работает
+// .main-nav--nojs .main-nav__toggle {
+//   @media (max-width: $width-tablet-max) {
+//     display: none;
+//   }
+// }
+
+// Нужный класс
+.main-nav--opened .main-nav__toggle {
+  @media (max-width: $width-tablet-max) {
+    background-color: $white;
+    z-index: 1;
+    top: -15px;
+    right: -20px;
+    display: block;
+    width: 73px;
+    height: 50px;
+    padding: 20px 30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      top: 10px;
+      right: 20px;
+      background-image: url("../img/menu-close.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// Нужный класс
+.main-nav--opened .main-nav__list {
+  @media (max-width: $width-tablet-max) {
+    display: block;
+  }
 }

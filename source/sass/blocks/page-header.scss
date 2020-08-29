@@ -1,4 +1,9 @@
 .page-header__wrapper {
   margin-top: 38px;
   margin-bottom: 29px;
+
+  @media (max-width: $width-tablet-max) {
+    margin-top: 16px;
+    margin-bottom: 7px;
+  }
 }

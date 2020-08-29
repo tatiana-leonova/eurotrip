@@ -1,9 +1,12 @@
 .page-footer__wrapper {
-  display: flex;
-  justify-content: space-between;
   padding-left: 13px;
   padding-top: 17px;
   padding-bottom: 60px;
+
+  @media (min-width: $width-desktop-min) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__contacts {
