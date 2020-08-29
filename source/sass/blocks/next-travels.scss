@@ -1,5 +1,39 @@
+.next-travels {
+  width: 388px;
+  // position: relative;
+  border-right: 1px solid #d7d9df;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   width: 1px;
+  //   height: auto;
+  //   background-color: #d7d9df;
+  //   top: 0;
+  //   right: 0;
+  // }
+}
+
+.next-travels__wrapper {
+  display: flex;
+}
+
 .next-travels__list {
   @include no-list;
+  margin-right: 33px;
+}
+
+.next-travels__title {
+  @include text(18px, 34px);
+  font-weight: 600;
+  color: $dark;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.next-travels__item {
+  margin-bottom: 4px;
+  width: 95px;
 }
 
 .next-travels__link {
@@ -7,4 +41,5 @@
   font-weight: 400;
   color: $text-footer;
   text-decoration: none;
+  display: block;
 }

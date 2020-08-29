@@ -1,13 +1,28 @@
-.page-footer__travels-title,
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 13px;
+  padding-top: 17px;
+  padding-bottom: 70px;
+}
+
+.page-footer__contacts {
+  width: 310px;
+  margin-left: 65px;
+  border-right: 1px solid #d7d9df;
+}
+
 .page-footer__contacts-title,
 .page-footer__corporate-title {
   @include text(18px, 34px);
   font-weight: 600;
   color: $dark;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
-.page-footer__travels-list {
-  @include no-list;
+.page-footer__contacts-title {
+  padding-left: 10px;
 }
 
 .page-footer__travels-item,
@@ -17,9 +32,42 @@
   color: $text-footer;
 }
 
-.page-footer__email,
-.page-footer__tel {
+.page-footer__email {
   @include text(14px, 17px);
   font-weight: 400;
   color: $accent-main;
+  display: block;
+  padding-left: 51px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.page-footer__email-icon {
+  position: absolute;
+  top: 0;
+  left: 11px;
+}
+
+.page-footer__tel {
+  @include text(16px, 34px);
+  font-weight: 400;
+  color: $accent-main;
+  display: block;
+  padding-left: 51px;
+  position: relative;
+}
+
+.page-footer__tel-icon {
+  position: absolute;
+  top: 0;
+  left: 11px;
+}
+
+.page-footer__corporate {
+  width: 360px;
+  padding-left: 31px;
+}
+
+.page-footer__corporate-text {
+  padding-right: 10px;
 }
