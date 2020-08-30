@@ -16,4 +16,8 @@
     padding-bottom: 75px;
     margin-bottom: 64px;
   }
+
+  @media (max-width: $width-mobile-max) {
+    background-image: none;
+  }
 }

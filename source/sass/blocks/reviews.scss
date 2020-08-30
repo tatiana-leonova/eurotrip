@@ -49,6 +49,10 @@
     height: 1px;
     background-color: $accent-main;
   }
+
+  @media (max-width: $width-mobile-max) {
+    @include text(2px, 24px);
+  }
 }
 
 .reviews__item {

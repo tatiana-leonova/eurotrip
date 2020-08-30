@@ -15,6 +15,10 @@
   @media (max-width: $width-tablet-max) {
     margin-right: 20px;
   }
+
+  @media (max-width: $width-mobile-max) {
+    flex-wrap: wrap;
+  }
 }
 
 .next-travels__list {
@@ -37,6 +41,10 @@
   color: $dark;
   margin: 0;
   margin-bottom: 15px;
+
+  @media (max-width: $width-mobile-max) {
+    @include text(18px, 32px);
+  }
 }
 
 .next-travels__item {
@@ -50,4 +58,8 @@
   color: $text-footer;
   text-decoration: none;
   display: block;
+
+  @media (max-width: $width-mobile-max) {
+    @include text(14px, 17px);
+  }
 }

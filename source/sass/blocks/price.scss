@@ -32,6 +32,10 @@
     padding-bottom: 4px;
   }
 
+  @media (max-width: $width-mobile-max) {
+    @include text(24px, 36px);
+  }
+
   &::after {
     @media (min-width: $width-desktop-min) {
       content: "";
@@ -115,5 +119,9 @@
     padding-left: 50px;
     padding-right: 50px;
     justify-content: space-between;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    flex-direction: column;
   }
 }

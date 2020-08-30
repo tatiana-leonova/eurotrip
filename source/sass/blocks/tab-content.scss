@@ -41,6 +41,10 @@
     padding-bottom: 5px;
   }
 
+  @media (max-width: $width-mobile-max) {
+    @include text(24px, 36px);
+  }
+
   &::after {
     @media (min-width: $width-desktop-min) {
       content: "";

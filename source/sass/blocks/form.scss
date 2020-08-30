@@ -8,6 +8,10 @@
   @media (max-width: $width-tablet-max) {
     margin: 0 auto;
   }
+
+  @media (max-width: $width-mobile-max) {
+    width: 100%;
+  }
 }
 
 .form__title {
@@ -35,6 +39,10 @@
 
   @media (max-width: $width-tablet-max) {
     margin-bottom: 19px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    flex-direction: column;
   }
 }
 

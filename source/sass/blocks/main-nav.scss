@@ -8,11 +8,22 @@
   display: block;
 }
 
+.main-nav__logo-img {
+  @media (max-width: $width-mobile-max) {
+    width: 44px;
+    height: 17px;
+  }
+}
+
 .main-nav__wrapper {
   display: flex;
   justify-content: flex-end;
   width: 900px;
   position: relative;
+
+  @media (max-width: $width-mobile-max) {
+    display: none;
+  }
 }
 
 .main-nav__list {
