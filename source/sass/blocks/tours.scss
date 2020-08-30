@@ -48,6 +48,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (max-width: $width-tablet-max) {
+    margin-bottom: 87px;
+  }
 }
 
 .tours__item {
@@ -100,5 +104,8 @@
 
   @media (max-width: $width-tablet-max) {
     left: 51px;
+    bottom: -1px;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
 }
