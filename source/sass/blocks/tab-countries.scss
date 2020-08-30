@@ -15,6 +15,11 @@
     overflow: hidden;
   }
 
+  @media (max-width: $width-mobile-max) {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -38,6 +43,10 @@
 
     @media (max-width: $width-tablet-max) {
       margin-right: 13.6%;
+    }
+
+    @media (max-width: $width-mobile-max) {
+      margin-right: 32.6%;
     }
   }
 }

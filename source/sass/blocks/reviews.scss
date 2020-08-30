@@ -15,6 +15,11 @@
     margin-left: -20px;
     margin-right: -20px;
   }
+
+  @media (max-width: $width-mobile-max) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 .reviews__wrapper {
@@ -29,6 +34,14 @@
     margin-top: 78px;
     padding-bottom: 0;
   }
+
+  @media (max-width: $width-mobile-max) {
+    width: 84%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-top: 51px;
+  }
 }
 
 .reviews__title {
@@ -39,19 +52,23 @@
   margin: 0;
   position: relative;
   padding-bottom: 18px;
+  display: inline-block;
+  border-bottom: 1px solid $accent-main;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 7px;
-    left: 0;
-    width: 68px;
-    height: 1px;
-    background-color: $accent-main;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 7px;
+  //   left: 0;
+  //   width: 68px;
+  //   height: 1px;
+  //   background-color: $accent-main;
+  // }
 
   @media (max-width: $width-mobile-max) {
-    @include text(2px, 24px);
+    @include text(20px, 24px);
+    padding-bottom: 11px;
+    margin-bottom: 7px;
   }
 }
 
@@ -64,6 +81,10 @@
   font-weight: 400;
   letter-spacing: -0.408333px;
   margin-bottom: 40px;
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 10px;
+  }
 }
 
 .reviews__author {
@@ -76,6 +97,12 @@
   padding-left: 55px;
   position: relative;
 
+  @media (max-width: $width-mobile-max) {
+    display: block;
+    padding-top: 56px;
+    padding-left: 0;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -84,6 +111,11 @@
     top: -12px;
     left: 1px;
     background-image: url("../img/reviews-vgolitzina@1x.png");
+
+    @media (max-width: $width-mobile-max) {
+      top: 6px;
+      left: 41%;
+    }
 
     &--greece {
       background-image: url("../img/reviews-vgolitzina@1x.png");

@@ -24,6 +24,10 @@
     text-align: center;
     margin-bottom: 30px;
   }
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 50px;
+  }
 }
 
 .tab-content__title {

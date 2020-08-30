@@ -15,4 +15,8 @@
     padding: 20px 30px;
     min-width: 250px;
   }
+
+  @media (max-width: $width-mobile-max) {
+    min-width: 288px;
+  }
 }
