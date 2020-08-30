@@ -1,7 +1,9 @@
 .countries {
-  background-image: url("../img/bg-worldmap-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-position: center 25%;
+  @media (min-width: $width-desktop-min) {
+    background-image: url("../img/bg-worldmap-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center 25%;
+  }
 }
 
 .countries__wrapper {
