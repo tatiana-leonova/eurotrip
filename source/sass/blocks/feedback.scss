@@ -1,11 +1,18 @@
-.feedback {
+.feedback__wrapper {
+  padding-top: 150px;
+  margin-right: -12px;
   background-image: url("../img/bg-feedback-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: 42px 35%;
   padding-bottom: 220px;
-}
 
-.feedback__wrapper {
-  padding-top: 150px;
-  margin-right: -12px;
+  @media (max-width: $width-tablet-max) {
+    background-image: url("../img/bg-feedback-tablet@1x.jpg");
+    margin-right: -20px;
+    margin-left: -20px;
+    background-position: 0 35%;
+    background-size: cover;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }

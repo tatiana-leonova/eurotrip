@@ -48,6 +48,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  // margin-bottom: 17px;
 
   @media (max-width: $width-tablet-max) {
     margin-bottom: 87px;
@@ -56,7 +57,7 @@
 
 .tours__item {
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 99px;
 
   @media (max-width: $width-desktop-only) {
     padding-right: 15px;

@@ -1,16 +1,19 @@
 .reviews {
-  background-image: url("../img/bg-reviews-desktop@1x.jpg");
-  background-repeat: no-repeat;
-
   @media (min-width: $width-desktop-min) {
+    background-image: url("../img/bg-reviews-desktop@1x.jpg");
+    background-repeat: no-repeat;
     width: 808px;
     min-height: 596px;
     background-position: 27% 100%;
+    margin: 0 auto;
+    padding-right: 30px;
   }
 
   @media (max-width: $width-tablet-max) {
     background-image: url("../img/country-greece-tablet@1x.jpg");
     background-size: cover;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
 

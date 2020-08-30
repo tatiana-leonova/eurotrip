@@ -9,6 +9,14 @@
   width: 291px;
   padding-top: 113px;
   margin-left: auto;
+
+  @media (max-width: $width-tablet-max) {
+    margin: 0 auto;
+    width: 96%;
+    text-align: center;
+    padding-top: 55px;
+    margin-bottom: 30px;
+  }
 }
 
 .price__title {
@@ -19,14 +27,21 @@
   margin: 0;
   padding-bottom: 31px;
 
+  @media (max-width: $width-tablet-max) {
+    @include text(30px, 45px);
+    padding-bottom: 4px;
+  }
+
   &::after {
-    content: "";
-    position: absolute;
-    bottom: 14px;
-    left: 0;
-    width: 175px;
-    height: 3px;
-    background-color: $accent-main;
+    @media (min-width: $width-desktop-min) {
+      content: "";
+      position: absolute;
+      bottom: 14px;
+      left: 0;
+      width: 175px;
+      height: 3px;
+      background-color: $accent-main;
+    }
   }
 }
 
@@ -34,6 +49,10 @@
   @include text(16px, 27px);
   font-weight: 400;
   margin-bottom: 60px;
+
+  @media (max-width: $width-tablet-max) {
+    margin-bottom: 33px;
+  }
 }
 
 .price__contacts-title {
@@ -50,16 +69,13 @@
   letter-spacing: 1px;
   margin-bottom: 13px;
   padding-left: 17%;
-}
 
-.price__contacts-tel {
-  position: relative;
-}
-
-.price__contacts-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @media (max-width: $width-tablet-max) {
+    @include text(18px, 34px);
+    padding-left: 0;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .price__contacts-link {
@@ -68,10 +84,36 @@
   color: $black;
   text-decoration: none;
   display: block;
-  padding-left: 48px;
+  padding-left: 14px;
+  position: relative;
+  text-align: center;
+
+
+  @media (max-width: $width-tablet-max) {
+    @include text(18px, 32px);
+    color: $accent-main;
+    text-decoration: underline;
+    padding-left: 0;
+  }
+}
+
+.price__contacts-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (max-width: $width-tablet-max) {
+    display: none;
+  }
 }
 
 .price__list {
   @include no-list;
   display: flex;
+
+  @media (max-width: $width-tablet-max) {
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+  }
 }

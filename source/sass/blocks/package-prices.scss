@@ -5,13 +5,24 @@
   border-radius: 6px;
   max-width: 370px;
   width: 48%;
-  margin-right: 30px;
   padding: 30px;
   padding-top: 40px;
   padding-bottom: 28px;
   display: flex;
   flex-direction: column;
   min-height: 610px;
+
+  @media (max-width: $width-tablet-max) {
+    border-radius: 6px 6px 0 0;
+    width: 46%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+
+  &:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
 }
 
 .package-prices__title-price {
@@ -19,6 +30,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 37px;
+
+  @media (max-width: $width-tablet-max) {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 11px;
+  }
 }
 
 .package-prices__title {
@@ -27,6 +44,12 @@
   letter-spacing: -1.27273px;
   margin: 0;
   margin-right: 20px;
+
+  @media (max-width: $width-tablet-max) {
+    @include text(24px, 18px);
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
 }
 
 .package-prices__price {
@@ -39,26 +62,22 @@
   padding-right: 20px;
   margin-top: 0;
   position: relative;
-  padding-bottom: 43px;
+  padding-bottom: 26px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $border;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    width: 310px;
-    height: 1px;
-    background-color: $border;
-
-    @media (max-width: $width-desktop-only) {
-      width: 248px;
-    }
+  @media (max-width: $width-tablet-max) {
+    @include text(16px, 24px);
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
   }
 }
 
 .package-prices__list {
   @include no-list;
-  margin-bottom: 15px;
+  margin-bottom: 23px;
 }
 
 .package-prices__item {
@@ -68,6 +87,12 @@
   margin-bottom: 15px;
   position: relative;
 
+  @media (max-width: $width-tablet-max) {
+    @include text(16px, 32px);
+    padding-left: 30px;
+    margin-bottom: 9px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -76,6 +101,11 @@
     width: 22px;
     height: 22px;
     background-image: url("../img/icon-check.svg");
+
+    @media (max-width: $width-tablet-max) {
+      top: 4px;
+      left: -3px;
+    }
   }
 }
 
@@ -87,5 +117,10 @@
   @media (max-width: $width-desktop-only) {
     @include text(10px, 12px);
     padding: 20px;
+  }
+
+  @media (max-width: $width-tablet-max) {
+    margin-right: -20px;
+    margin-left: -20px;
   }
 }

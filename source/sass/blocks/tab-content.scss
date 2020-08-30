@@ -2,6 +2,11 @@
   display: flex;
   margin-bottom: 230px;
 
+  @media (min-width: $width-desktop) {
+    margin: 0 auto;
+    margin-bottom: 230px;
+  }
+
   @media (max-width: $width-tablet-max) {
     flex-direction: column;
     margin-bottom: 30px;
@@ -11,6 +16,7 @@
 .tab-content__wrapper-text {
   @media (min-width: $width-desktop-min) {
     width: 370px;
+    margin: 0 auto;
   }
 
   @media (max-width: $width-tablet-max) {
