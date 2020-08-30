@@ -7,13 +7,34 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (max-width: $width-tablet-max) {
+    padding-left: 0;
+  }
+}
+
+.page-footer__inner {
+  display: flex;
+  width: 70%;
+
+  @media (max-width: $width-tablet-max) {
+    padding-bottom: 18px;
+    width: 100%;
+    border-bottom: 1px solid #d7d9df;
+    margin-bottom: 30px;
+  }
 }
 
 .page-footer__contacts {
-  width: 310px;
-  // width: 26.7%;
-  margin-left: 5%;
+  margin-left: 10%;
   border-right: 1px solid #d7d9df;
+  width: 39%;
+
+  @media (max-width: $width-tablet-max) {
+    width: 100%;
+    margin-left: 5.6%;
+    border-right: none;
+  }
 }
 
 .page-footer__contacts-title,
@@ -28,6 +49,10 @@
 .page-footer__contacts-title {
   padding-left: 10px;
 }
+
+// .page-footer__corporate-title {
+
+// }
 
 .page-footer__travels-item,
 .page-footer__corporate-text {
@@ -69,9 +94,19 @@
 
 .page-footer__corporate {
   width: 31.5%;
-  padding-left: 3%;
+  padding-left: 2.5%;
+
+  @media (max-width: $width-tablet-max) {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
 .page-footer__corporate-text {
   padding-right: 10px;
+
+  @media (max-width: $width-tablet-max) {
+    padding-right: 0;
+  }
 }

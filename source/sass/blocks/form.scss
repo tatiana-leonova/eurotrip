@@ -4,6 +4,10 @@
   padding: 50px;
   margin-left: auto;
   box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+
+  @media (max-width: $width-tablet-max) {
+    margin: 0 auto;
+  }
 }
 
 .form__title {
@@ -28,6 +32,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+
+  @media (max-width: $width-tablet-max) {
+    margin-bottom: 19px;
+  }
 }
 
 .form__input {

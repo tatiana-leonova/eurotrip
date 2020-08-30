@@ -8,4 +8,8 @@
 
 .countries__wrapper {
   margin-bottom: 57px;
+
+  @media (max-width: $width-tablet-max) {
+    margin-bottom: 124px;
+  }
 }

@@ -77,7 +77,11 @@
 
 .package-prices__list {
   @include no-list;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
+
+  @media (max-width: $width-tablet-max) {
+    margin-bottom: 22px;
+  }
 }
 
 .package-prices__item {
