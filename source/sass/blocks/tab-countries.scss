@@ -7,6 +7,14 @@
   padding-bottom: 17px;
   position: relative;
 
+  @media (max-width: $width-tablet-max) {
+    margin-left: 18px;
+    flex-wrap: nowrap;
+    margin-right: -20px;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -15,6 +23,10 @@
     width: 90%;
     height: 1px;
     background-color: $border;
+
+    @media (max-width: $width-tablet-max) {
+      width: 100%;
+    }
   }
 }
 
@@ -23,6 +35,10 @@
 
   &:not(:last-child) {
     margin-right: 9.9%;
+
+    @media (max-width: $width-tablet-max) {
+      margin-right: 13.6%;
+    }
   }
 }
 
