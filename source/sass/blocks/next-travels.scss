@@ -11,7 +11,6 @@
     border-right: none;
     border-bottom: 1px solid #d7d9df;
     margin-bottom: 28px;
-    // margin-left: 10px;
   }
 }
 
@@ -84,8 +83,19 @@
   color: $text-footer;
   text-decoration: none;
   display: block;
+  transition: 0.3s;
 
   @media (max-width: $width-mobile-max) {
     @include text(14px, 17px);
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-hover;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

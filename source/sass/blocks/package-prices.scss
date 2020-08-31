@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   min-height: 610px;
+  transition: all 0.3s;
 
   @media (max-width: $width-tablet-max) {
     border-radius: 6px 6px 0 0;
@@ -32,6 +33,23 @@
 
     @media (max-width: $width-mobile-max) {
       margin-right: 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-hover;
+    box-shadow: inset 0 0 0 2px $accent-hover;
+
+    .package-prices__title,
+    .package-prices__price {
+      color: $accent-hover;
+    }
+
+    .package-prices__item {
+      &::before {
+        background-image: url("../img/icon-check-hvr.svg");
+      }
     }
   }
 }
@@ -142,5 +160,9 @@
   @media (max-width: $width-tablet-max) {
     margin-right: -20px;
     margin-left: -20px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    min-width: 288px;
   }
 }

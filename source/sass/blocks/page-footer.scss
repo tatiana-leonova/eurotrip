@@ -94,6 +94,17 @@
   padding-left: 51px;
   margin-bottom: 20px;
   position: relative;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $accent-hover;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .page-footer__email-icon {
@@ -109,9 +120,20 @@
   display: block;
   padding-left: 51px;
   position: relative;
+  transition: 0.3s;
 
   @media (max-width: $width-mobile-max) {
     @include text(16px, 32px);
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-hover;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }
 
@@ -119,6 +141,7 @@
   position: absolute;
   top: 0;
   left: 11px;
+  fill: #d7d9df;
 }
 
 .page-footer__corporate {

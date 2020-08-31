@@ -4,9 +4,10 @@
   flex-wrap: wrap;
   max-width: 1002px;
   margin-bottom: 73px;
-  margin-left: 30px;
+  // margin-left: 30px;
   padding-bottom: 17px;
   position: relative;
+  // margin-left: 5px;
 
   @media (max-width: $width-tablet-max) {
     margin-left: 37px;
@@ -59,8 +60,18 @@
   letter-spacing: -0.415px;
   text-decoration: none;
   color: $border;
+  transition: 0.3s;
 
   &--active {
     color: $accent-main;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-hover;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

@@ -8,6 +8,8 @@
   padding: 30px 40px;
   letter-spacing: 2px;
   text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
 
   @media (max-width: $width-tablet-max) {
     @include text(10px, 12px);
@@ -18,5 +20,14 @@
 
   @media (max-width: $width-mobile-max) {
     min-width: 288px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-hover;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

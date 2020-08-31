@@ -75,10 +75,21 @@
   font-weight: 500;
   text-decoration: none;
   color: $pitch-dark;
+  transition: 0.3s;
 
   @media (max-width: $width-tablet-max) {
     @include text(20px, 28px);
     font-weight: 600;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-hover;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }
 
@@ -96,12 +107,24 @@
   padding-left: 40px;
   display: block;
   margin-right: 15px;
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    color: $accent-hover;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .main-nav__phone-icon {
   position: absolute;
   top: 0;
   left: 1px;
+  fill: $accent-main;
 }
 
 // JS меню

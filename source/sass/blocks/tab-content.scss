@@ -71,4 +71,11 @@
   @media (max-width: $width-tablet-max) {
     margin-bottom: 18px;
   }
+
+  .tab-content__button {
+    @media (max-width: $width-mobile-max) {
+      width: 100%;
+      max-width: 288px;
+    }
+  }
 }

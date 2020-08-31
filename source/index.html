@@ -105,15 +105,18 @@
           <h1 class="tours__title">Места посещения</h1>
           <p class="tours__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           <ul class="tours__list">
-              <li class="tours__item">
-                <a class="tours__item-link" href="#"></a>
+            <li class="tours__item">
+              <a class="tours__item-link tours__item-link--hover" href="#">
                 <picture>
                   <source media="(max-width: 1023px)" srcset="img/tours-greece-mobile@1x.jpg">
                   <img class="tours__item-image" src="img/tours-greece-desktop@1x.jpg" width="350" height="430"
                     alt="Изображение красивых мест Греции">
                 </picture>
                 <h3 class="tours__item-title">Греция</h3>
-            </a>
+                <div class="tours__item-hvr">
+                  <p class="tours__item-button" href="#">Смотреть подробнее</p>
+                </div>
+              </a>
             </li>
             <li class="tours__item">
               <a class="tours__item-link" href="#">
@@ -123,6 +126,9 @@
                     alt="Изображение красивых мест Албании">
                 </picture>
                 <h3 class="tours__item-title">Албания</h3>
+                <div class="tours__item-hvr">
+                  <p class="tours__item-button" href="#">Смотреть подробнее</p>
+                </div>
               </a>
             </li>
             <li class="tours__item">
@@ -133,6 +139,9 @@
                     alt="Изображение красивых мест Македонии">
                 </picture>
                 <p class="tours__item-title">Македония</p>
+                <div class="tours__item-hvr">
+                  <p class="tours__item-button" href="#">Смотреть подробнее</p>
+                </div>
               </a>
             </li>
             <li class="tours__item">
@@ -143,18 +152,24 @@
                     alt="Изображение красивых мест Черногории">
                 </picture>
                 <h3 class="tours__item-title">Черногория</h3>
+                <div class="tours__item-hvr">
+                  <p class="tours__item-button" href="#">Смотреть подробнее</p>
+                </div>
               </a>
             </li>
 
-              <li class="tours__item">
-                <a class="tours__item-link" href="#">
+            <li class="tours__item">
+              <a class="tours__item-link" href="#">
                 <picture>
                   <source media="(max-width: 1023px)" srcset="img/tours-croatia-mobile@1x.jpg">
                   <img class="tours__item-image" src="img/tours-croatia-desktop@1x.jpg" width="350" height="430"
                     alt="Изображение красивых мест Хорватии">
                 </picture>
                 <h3 class="tours__item-title">Хорватия</h3>
-            </a>
+                <div class="tours__item-hvr">
+                  <p class="tours__item-button" href="#">Смотреть подробнее</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -163,26 +178,27 @@
 
     <section class="countries">
       <div class="countries__wrapper">
-        <!-- <div class="container">
-          <h2 class="visually-hidden">Выбор тура в страны Европы</h2> -->
-        <!-- Tabs -->
-        <ul id="tab-list" class="countries__tab-list tab-countries">
-          <li class="tab-countries__item">
-            <a class="tab-countries__item-link tab-countries__item-link--active" href="#greece">Греция</a>
-          </li>
-          <li class="tab-countries__item">
-            <a class="tab-countries__item-link" href="#albania">Албания</a>
-          </li>
-          <li class="tab-countries__item">
-            <a class="tab-countries__item-link" href="#macedonia">Македония</a>
-          </li>
-          <li class="tab-countries__item">
-            <a class="tab-countries__item-link" href="#montenegro">Черногория</a>
-          </li>
-          <li class="tab-countries__item">
-            <a class="tab-countries__item-link" href="#croatia">Хорватия</a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="visually-hidden">Выбор тура в страны Европы</h2>
+          <!-- Tabs -->
+          <ul id="tab-list" class="countries__tab-list tab-countries">
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link tab-countries__item-link--active" href="#greece">Греция</a>
+            </li>
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link" href="#albania">Албания</a>
+            </li>
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link" href="#macedonia">Македония</a>
+            </li>
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link" href="#montenegro">Черногория</a>
+            </li>
+            <li class="tab-countries__item">
+              <a class="tab-countries__item-link" href="#croatia">Хорватия</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- Tab content -->
