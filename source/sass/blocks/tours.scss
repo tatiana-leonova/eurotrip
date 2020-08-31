@@ -84,6 +84,8 @@
   @media (max-width: $width-mobile-max) {
     padding: 0;
     margin-bottom: 35px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -99,6 +101,12 @@
   @media (max-width: $width-tablet-max) {
     width: 288px;
     height: 425px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
@@ -129,6 +137,6 @@
   }
 
   @media (max-width: $width-mobile-max) {
-    left: 36px;
+    left: calc(50% - 107px);
   }
 }
