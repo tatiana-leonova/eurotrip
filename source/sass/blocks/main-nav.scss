@@ -118,6 +118,10 @@
     cursor: pointer;
     border: none;
 
+    @media (max-width: $width-mobile-max) {
+      right: -15px;
+    }
+
     &::after {
       position: absolute;
       content: "";

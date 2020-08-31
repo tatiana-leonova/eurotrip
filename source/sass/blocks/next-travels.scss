@@ -5,6 +5,14 @@
   @media (max-width: $width-tablet-max) {
     width: 78%;
   }
+
+  @media (max-width: $width-mobile-max) {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #d7d9df;
+    margin-bottom: 28px;
+    margin-left: 10px;
+  }
 }
 
 .next-travels__wrapper {
@@ -18,6 +26,9 @@
 
   @media (max-width: $width-mobile-max) {
     flex-wrap: wrap;
+    margin-right: 0;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -33,6 +44,14 @@
   @media (max-width: $width-tablet-max) {
     margin-right: 30px;
   }
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 10px;
+
+    &:first-child {
+      margin-right: 55px;
+    }
+  }
 }
 
 .next-travels__title {
@@ -44,12 +63,19 @@
 
   @media (max-width: $width-mobile-max) {
     @include text(18px, 32px);
+    text-align: center;
+    margin-bottom: 21px;
+    margin-left: -25px;
   }
 }
 
 .next-travels__item {
   margin-bottom: 4px;
   width: 95px;
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 10px;
+  }
 }
 
 .next-travels__link {
