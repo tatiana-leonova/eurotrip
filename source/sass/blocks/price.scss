@@ -123,11 +123,14 @@
 .price__list {
   @include no-list;
   display: flex;
+  margin-right: 30px;
 
   @media (max-width: $width-tablet-max) {
     padding-left: 50px;
     padding-right: 50px;
     justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: 122px;
   }
 
   @media (max-width: $width-mobile-max) {

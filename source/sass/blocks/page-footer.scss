@@ -40,6 +40,11 @@
   border-right: 1px solid #d7d9df;
   width: 39%;
 
+  @media (max-width: $width-desktop-only) {
+    margin-left: 2%;
+    width: 50%;
+  }
+
   @media (max-width: $width-tablet-max) {
     width: 100%;
     margin-left: 5.6%;
@@ -48,7 +53,8 @@
 
   @media (max-width: $width-mobile-max) {
     text-align: center;
-    margin-left: -10px;
+    // margin-left: -10px;
+    margin-left: 0;
   }
 }
 

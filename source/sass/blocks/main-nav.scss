@@ -106,6 +106,8 @@
 
 // JS меню
 .main-nav__toggle {
+  display: none;
+
   @media (max-width: $width-tablet-max) {
     position: absolute;
     top: -15px;
@@ -120,6 +122,8 @@
 
     @media (max-width: $width-mobile-max) {
       right: -15px;
+      width: 50px;
+      padding: 20px 10px;
     }
 
     &::after {
@@ -131,6 +135,10 @@
       right: 20px;
       background-image: url("../img/menu-open.svg");
       background-repeat: no-repeat;
+
+      @media (max-width: $width-mobile-max) {
+        right: 10px;
+      }
     }
   }
 }

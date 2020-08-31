@@ -4,13 +4,13 @@
   flex-wrap: wrap;
   max-width: 1002px;
   margin-bottom: 73px;
+  margin-left: 30px;
   padding-bottom: 17px;
   position: relative;
 
   @media (max-width: $width-tablet-max) {
-    margin-left: 18px;
+    margin-left: 37px;
     flex-wrap: nowrap;
-    margin-right: -20px;
     margin-bottom: 17px;
     overflow: hidden;
   }
@@ -18,6 +18,8 @@
   @media (max-width: $width-mobile-max) {
     margin-left: 0;
     margin-bottom: 8px;
+    margin-right: 0;
+    padding-left: 15px;
   }
 
   &::after {

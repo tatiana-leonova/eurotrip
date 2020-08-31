@@ -3,6 +3,11 @@
     background-image: url("../img/bg-worldmap-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: center 25%;
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 22px;
   }
 }
 
@@ -10,10 +15,10 @@
   margin-bottom: 57px;
 
   @media (max-width: $width-tablet-max) {
-    margin-bottom: 124px;
+    margin-bottom: 17px;
   }
 
   @media (max-width: $width-mobile-max) {
-    margin-bottom: 23px;
+    margin-bottom: 9px;
   }
 }

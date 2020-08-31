@@ -47,6 +47,10 @@
   margin: 0;
   margin-bottom: 28px;
 
+  @media (min-width: $width-desktop-min) {
+    width: 400px;
+  }
+
   @media (max-width: $width-tablet-max) {
     @include text(30px, 45px);
     letter-spacing: normal;
