@@ -12,4 +12,8 @@
   @media (max-width: $width-tablet-max) {
     margin-bottom: 124px;
   }
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 23px;
+  }
 }

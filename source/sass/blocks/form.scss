@@ -11,6 +11,9 @@
 
   @media (max-width: $width-mobile-max) {
     width: 100%;
+    padding: 50px 20px 50px 20px;
+    background-color: $light;
+    box-shadow: 0 0 0;
   }
 }
 
@@ -21,6 +24,10 @@
   color: $dark;
   margin: 0;
   margin-bottom: 13px;
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__text {
@@ -30,6 +37,10 @@
   color: $dark;
   margin-top: 0;
   margin-bottom: 23px;
+
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 19px;
+  }
 }
 
 .form__wrapper {
@@ -43,6 +54,7 @@
 
   @media (max-width: $width-mobile-max) {
     flex-direction: column;
+    margin-bottom: 0;
   }
 }
 
@@ -50,6 +62,10 @@
   height: 50px;
   padding: 15px;
   width: 270px;
+
+  @media (max-width: $width-mobile-max) {
+    width: 100%;
+  }
 
   &::placeholder {
     @include text(14px, 17px);
@@ -61,6 +77,12 @@
 
 .form__input--tel {
   padding-left: 49px;
+}
+
+.form__label {
+  @media (max-width: $width-mobile-max) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__label--tel {
