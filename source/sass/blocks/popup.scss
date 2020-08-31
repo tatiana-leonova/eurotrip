@@ -1,0 +1,35 @@
+.popup {
+  width: 728px;
+  min-height: 44px;
+  background-color: $light;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+
+  @media (max-width: $width-mobile-max) {
+    width: 290px;
+  }
+}
+
+.popup__img {
+  display: block;
+
+  @media (max-width: $width-mobile-max) {
+    display: none;
+  }
+}
+
+.popup__photo {
+  @media (max-width: $width-mobile-max) {
+    display: none;
+  }
+}
+
+.popup__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}

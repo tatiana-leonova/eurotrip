@@ -15,6 +15,18 @@
     background-color: $light;
     box-shadow: 0 0 0;
   }
+
+  &--popup {
+    width: 390px;
+    height: 100%;
+    box-shadow: 0 0 0;
+    background-color: $light;
+    padding-top: 100px;
+
+    @media (max-width: $width-mobile-max) {
+      width: 290px;
+    }
+  }
 }
 
 .form__title {
@@ -56,6 +68,10 @@
     flex-direction: column;
     margin-bottom: 0;
   }
+
+  &--popup {
+    flex-direction: column;
+  }
 }
 
 .form__input {
@@ -87,6 +103,10 @@
     margin-bottom: 20px;
     width: 100%;
     max-width: 500px;
+  }
+
+  &--popup {
+    margin-bottom: 20px;
   }
 }
 
@@ -120,4 +140,9 @@
   display: block;
   padding: 18px 40px;
   margin: 0 auto;
+
+  &--popup {
+    width: 176px;
+    min-width: 176px;
+  }
 }

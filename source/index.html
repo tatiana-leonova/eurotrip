@@ -328,7 +328,7 @@
             <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             <div class="form__wrapper">
               <label class="form__label form__label--tel" for="tel">
-                <input class="form__input form__input--tel" type="text" name="tel" id="tel"
+                <input class="form__input form__input--tel" type="text" name="tel" id="tel" pattern="[0-9]{10}"
                   placeholder="Введите 10 цифр номера" required>
               </label>
               <label class="form__label" for="email">
@@ -429,9 +429,38 @@
           </p>
         </div>
       </div>
-
     </div>
   </footer>
+
+  <div class="popup">
+    <div class="popup__photo">
+      <picture>
+        <!-- <source srcset="img/modal-desktop@1x.webp 1x, img/modal-desktop@2x.webp 2x" type="image/webp"> -->
+        <img class="popup__img" src="img/modal-desktop@1x.jpg" srcset="img/modal-desktop@2x.jpg" width="338"
+          height="444" alt="Изображение океана">
+      </picture>
+    </div>
+    <div class="popup__wrapper">
+      <button class="popup__close" aria-label="Закрыть форму заявки">
+        <svg class="popup__close-icon" width="26" height="20">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+      <form class="popup__form form form--popup" method="get" action="https://echo.htmlacademy.ru">
+        <h2 class="form__title">Купить тур</h2>
+        <div class="form__wrapper form__wrapper--popup">
+          <label class="form__label form__label--tel form__label--popup" for="popup-tel">
+            <input class="form__input form__input--tel" type="text" name="tel" id="popup-tel" pattern="[0-9]{10}"
+              placeholder="Введите 10 цифр номера" required>
+          </label>
+          <label class="form__label" for="popup-email form__label--popup">
+            <input class="form__input" type="text" name="email" id="popup-email" placeholder="E-mail">
+          </label>
+        </div>
+        <button class="form__button form__button--popup button" type="submit">отправить</button>
+      </form>
+    </div>
+  </div>
 
 </body>
 
