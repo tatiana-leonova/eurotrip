@@ -20,8 +20,19 @@
     padding-bottom: 0;
   }
 
+  @media (max-width: $width-mobile-max) {
+    width: auto;
+    max-width: 100%;
+    padding-top: 30px;
+    margin-bottom: 25px;
+  }
+
   &:not(:nth-child(2n)) {
     margin-right: 30px;
+
+    @media (max-width: $width-mobile-max) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -53,6 +64,7 @@
 
   @media (max-width: $width-mobile-max) {
     @include text(24px, 34px);
+    margin-bottom: 10px;
   }
 }
 
