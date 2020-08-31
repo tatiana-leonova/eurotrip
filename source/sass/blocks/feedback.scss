@@ -20,5 +20,8 @@
   @media (max-width: $width-mobile-max) {
     background-image: none;
     padding-top: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 0;
   }
 }

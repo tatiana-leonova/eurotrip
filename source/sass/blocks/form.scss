@@ -11,7 +11,7 @@
 
   @media (max-width: $width-mobile-max) {
     width: 100%;
-    padding: 50px 20px 50px 20px;
+    padding: 50px 15px 50px 15px;
     background-color: $light;
     box-shadow: 0 0 0;
   }
@@ -62,9 +62,11 @@
   height: 50px;
   padding: 15px;
   width: 270px;
+  border: 1px solid $border;
 
   @media (max-width: $width-mobile-max) {
     width: 100%;
+    max-width: 500px;
   }
 
   &::placeholder {
@@ -81,7 +83,10 @@
 
 .form__label {
   @media (max-width: $width-mobile-max) {
+    margin: 0 auto;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
   }
 }
 
