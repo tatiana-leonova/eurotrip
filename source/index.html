@@ -14,6 +14,11 @@
   <link rel="preload" href="fonts/PoppinsMedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async=""></script>
+
   <!-- Pixel Glass -->
   <style>
     HTML {
@@ -95,7 +100,7 @@
               В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
               природы.
             </p>
-            <button class="promo__button button">смотреть тур</button>
+            <a class="promo__button button" href="#countries">смотреть тур</a>
           </div>
         </div>
       </div>
@@ -215,7 +220,8 @@
           <!-- Tabs -->
           <ul id="tab-list" class="countries__tab-list tab-countries">
             <li class="tab-countries__item">
-              <a class="tab-countries__item-link tab-countries__item-link--active" href="#greece" data-name="greece">Греция</a>
+              <a class="tab-countries__item-link tab-countries__item-link--active" href="#greece"
+                data-name="greece">Греция</a>
             </li>
             <li class="tab-countries__item">
               <a class="tab-countries__item-link" href="#albania" data-name="albania">Албания</a>
@@ -507,8 +513,8 @@
             <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             <div class="form__wrapper">
               <label class="form__label form__label--phone" for="phone">
-                <input class="form__input form__input--phone form__input--phone-feedback" type="text" name="phone" id="phone"
-                  placeholder="Введите 10 цифр номера" required>
+                <input class="form__input form__input--phone form__input--phone-feedback" type="text" name="phone"
+                  id="phone" placeholder="Введите 10 цифр номера" required>
               </label>
               <label class="form__label" for="email">
                 <input class="form__input form__input--email form__input--email-feedback" type="text" name="email"
@@ -585,18 +591,23 @@
           </div>
           <div class="page-footer__contacts">
             <h4 class="page-footer__contacts-title">Наши контакты</h4>
-            <a class="page-footer__email" href="puteshestviemechta@gmail.ru">
-              <svg class="page-footer__email-icon" width="26" height="20">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
-              <span>puteshestviemechta@gmail.ru</span>
-            </a>
-            <a class="page-footer__phone" href="tel:+749978468446">
-              <svg class="page-footer__phone-icon" width="30" height="30">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
-              <span>+7 (499) -784-684-46</span>
-            </a>
+            <div class="page-footer__email-wrapper">
+              <a class="page-footer__email" href="puteshestviemechta@gmail.ru">
+                <svg class="page-footer__email-icon" width="26" height="20">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+                <span class="page-footer__email-text page-footer__email-text--1">puteshestviemechta@gmail.ru</span>
+                <span class="page-footer__email-text page-footer__email-text--2">Почта</span>
+              </a>
+            </div>
+            <div class="page-footer__phone-wrapper">
+              <a class="page-footer__phone" href="tel:+749978468446">
+                <svg class="page-footer__phone-icon" width="30" height="30">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+                <span>+7 (499) -784-684-46</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -631,8 +642,8 @@
           <h2 class="form__title">Купить тур</h2>
           <div class="form__wrapper form__wrapper--popup">
             <label class="form__label form__label--phone form__label--popup" for="popup-phone">
-              <input class="form__input form__input--phone form__input--phone-buy" type="text" name="phone" id="popup-phone"
-                placeholder="Введите 10 цифр номера" required>
+              <input class="form__input form__input--phone form__input--phone-buy" type="text" name="phone"
+                id="popup-phone" placeholder="Введите 10 цифр номера" required>
             </label>
             <label class="form__label form__label--popup" for="popup-email">
               <input class="form__input form__input-email form__input-email-buy" type="text" name="email"
@@ -647,11 +658,16 @@
 
   <div class="overlay overlay--success">
     <div class="message-form">
+      <button class="message-form__close" aria-label="Закрыть форму заявки">
+        <svg class="message-form__close-icon" width="26" height="26">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
       <p class="message-form__text">Форма успешно отправлена, спасибо! :)</p>
     </div>
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 

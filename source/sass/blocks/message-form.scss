@@ -1,13 +1,16 @@
 .message-form {
   width: 828px;
-  padding: 60px 30px;
+  padding: 175px 30px;
   background-color: $light;
-  // min-height: 444px;
-   position: absolute;
-   z-index: 100;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: $width-tablet-max) {
+    width: 100%;
+  }
 
 }
 

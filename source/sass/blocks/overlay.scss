@@ -12,3 +12,12 @@
 .overlay--opened {
   display: block;
 }
+
+.message-form__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}

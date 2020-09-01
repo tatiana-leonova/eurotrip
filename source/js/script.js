@@ -34,6 +34,8 @@ const emailFeedback = document.querySelector(".form__input--email-feedback");
 const phoneBuy = document.querySelector(".form__input--phone-buy");
 const emailBuy = document.querySelector(".form__input-email-buy");
 
+const messagePopupClose = document.querySelector(".message-form__close");
+
 buttonBuySubmitForm.addEventListener("click", onBuySubmitClick);
 buttonFeedbackSubmitForm.addEventListener("click", onFeedbackSubmitClick);
 
@@ -46,8 +48,7 @@ if (overlayForm) {
     item.addEventListener("click", openOrderForm);
   });
 
-  closeOverlay(overlayForm);
-  popupClose.addEventListener("click", closeOrderForm);
+  closeOverlay(overlayForm, popupClose);
 }
 
 function openOrderForm(event) {
@@ -64,7 +65,8 @@ function closeOrderForm(event) {
     element.classList.contains("overlay--form") ||
     element.classList.contains("overlay--success") ||
     event.keyCode === 27 ||
-    element.classList.contains("popup__close-icon")
+    element.classList.contains("popup__close-icon") ||
+    element.classList.contains("message-form__close-icon")
   ) {
     overlayForm.classList.remove("overlay--opened");
     overlaySuccess.classList.remove("overlay--opened");
@@ -101,13 +103,14 @@ function onFeedbackSubmitClick(event) {
   );
 }
 
-function closeOverlay(overlayItem) {
+function closeOverlay(overlayItem, popupClose) {
   window.addEventListener("keydown", closeOrderForm);
   overlayItem.addEventListener("click", closeOrderForm);
+  popupClose.addEventListener("click", closeOrderForm);
 }
 
 function submitSuccess() {
-  closeOverlay(overlaySuccess);
+  closeOverlay(overlaySuccess, messagePopupClose);
   overlayForm.classList.remove("overlay--opened");
   overlaySuccess.classList.add("overlay--opened");
 }

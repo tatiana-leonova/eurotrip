@@ -96,6 +96,10 @@
   position: relative;
   transition: 0.3s;
 
+  @media (max-width: $width-mobile-max) {
+    display: inline-block;
+  }
+
   &:hover,
   &:focus {
     color: $accent-hover;
@@ -113,6 +117,21 @@
   left: 11px;
 }
 
+
+.page-footer__email-text--1 {
+    @media (max-width: $width-mobile-max) {
+      display: none;
+    }
+  }
+
+  .page-footer__email-text--2 {
+    display: none;
+
+    @media (max-width: $width-mobile-max) {
+      display: block;
+    }
+  }
+
 .page-footer__phone {
   @include text(16px, 34px);
   font-weight: 400;
@@ -124,6 +143,7 @@
 
   @media (max-width: $width-mobile-max) {
     @include text(16px, 32px);
+    display: inline-block;
   }
 
   &:hover,
