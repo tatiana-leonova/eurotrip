@@ -6,6 +6,11 @@
   background-position: 12px 35%;
   padding-bottom: 220px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-feedback-desktop@2x.jpg");
+    background-size: 844px auto;
+  }
+
   @media (max-width: $width-tablet-max) {
     background-image: url("../img/bg-feedback-tablet@1x.jpg");
     margin-right: -20px;
@@ -15,6 +20,10 @@
     padding-top: 70px;
     padding-bottom: 75px;
     margin-bottom: 64px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-feedback-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $width-mobile-max) {

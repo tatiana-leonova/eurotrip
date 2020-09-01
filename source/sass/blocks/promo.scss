@@ -7,18 +7,26 @@
   margin-bottom: 200px;
   background-size: cover;
 
-  @media (max-width: $width-tablet-max) {
-    background-image: url("../img/bg-promo-tablet@1x.jpg");
-    min-height: 344px;
-    background-position: center 100%;
-    background-size: cover;
-    margin-bottom: 80px;
-  }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-promo-desktop@2x.jpg");
 
-  @media (max-width: $width-mobile-max) {
-    background-color: $white;
-    background-image: none;
-    margin-bottom: 108px;
+    @media (max-width: $width-tablet-max) {
+      background-image: url("../img/bg-promo-tablet@1x.jpg");
+      min-height: 344px;
+      background-position: center 100%;
+      background-size: cover;
+      margin-bottom: 80px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-promo-tablet@2x.jpg");
+      }
+    }
+
+    @media (max-width: $width-mobile-max) {
+      background-color: $white;
+      background-image: none;
+      margin-bottom: 108px;
+    }
   }
 }
 
@@ -71,6 +79,10 @@
     padding-right: 18px;
     padding-left: 18px;
     padding-bottom: 80px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-promo-mobile@2x.jpg");
+    }
   }
 }
 
