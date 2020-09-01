@@ -13,6 +13,10 @@
   }
 }
 
+.tab-content__item--hide {
+  display: none;
+}
+
 .tab-content__wrapper-text {
   @media (min-width: $width-desktop-min) {
     width: 370px;

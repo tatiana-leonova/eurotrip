@@ -56,19 +56,19 @@
     <div class="page-header__wrapper">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper-logo">
-        <a class="main-nav__logo">
-          <img class="main-nav__logo-img" src="img/logo.svg" width="57" height="22"
-            alt="Логотип сайта Way - туры по Европе">
-        </a>
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-img" src="img/logo.svg" width="57" height="22"
+              alt="Логотип сайта Way - туры по Европе">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="#">О путешествии</a>
+              <a class="main-nav__item-link" href="#tours">О путешествии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="#">Цены</a>
+              <a class="main-nav__item-link" href="#price">Цены</a>
             </li>
           </ul>
           <div class="main-nav__info">
@@ -101,14 +101,14 @@
       </div>
     </section>
 
-    <section class="tours">
+    <section class="tours" id="tours">
       <div class="container">
         <div class="tours__wrapper">
           <h1 class="tours__title">Места посещения</h1>
           <p class="tours__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           <ul class="tours__list">
             <li class="tours__item">
-              <a class="tours__item-link tours__item-link--hover" href="#">
+              <a class="tours__item-link tours__item-link--hover" href="#countries" data-name="greece">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)"
                     srcset="img/tours-greece-mobile@1x.webp 1x, img/tours-greece-mobile@2x.webp 2x">
@@ -127,7 +127,7 @@
               </a>
             </li>
             <li class="tours__item">
-              <a class="tours__item-link" href="#">
+              <a class="tours__item-link" href="#countries" data-name="albania">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)"
                     srcset="img/tours-albania-mobile@1x.webp 1x, img/tours-albania-mobile@2x.webp 2x">
@@ -146,7 +146,7 @@
               </a>
             </li>
             <li class="tours__item">
-              <a class="tours__item-link" href="#">
+              <a class="tours__item-link" href="#countries" data-name="macedonia">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)"
                     srcset="img/tours-macedonia-mobile@1x.webp 1x, img/tours-macedonia-mobile@2x.webp 2x">
@@ -165,7 +165,7 @@
               </a>
             </li>
             <li class="tours__item">
-              <a class="tours__item-link" href="#">
+              <a class="tours__item-link" href="#countries" data-name="montenegro">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)"
                     srcset="img/tours-montenegro-mobile@1x.webp 1x, img/tours-montenegro-mobile@2x.webp 2x">
@@ -185,7 +185,7 @@
             </li>
 
             <li class="tours__item">
-              <a class="tours__item-link" href="#">
+              <a class="tours__item-link" href="#countries" data-name="croatia">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)"
                     srcset="img/tours-croatia-mobile@1x.webp 1x, img/tours-croatia-mobile@2x.webp 2x">
@@ -208,26 +208,26 @@
       </div>
     </section>
 
-    <section class="countries">
+    <section class="countries" id="countries">
       <div class="countries__wrapper">
         <div class="container">
           <h2 class="visually-hidden">Выбор тура в страны Европы</h2>
           <!-- Tabs -->
           <ul id="tab-list" class="countries__tab-list tab-countries">
             <li class="tab-countries__item">
-              <a class="tab-countries__item-link tab-countries__item-link--active" href="#greece">Греция</a>
+              <a class="tab-countries__item-link" href="#greece" data-name="greece">Греция</a>
             </li>
             <li class="tab-countries__item">
-              <a class="tab-countries__item-link" href="#albania">Албания</a>
+              <a class="tab-countries__item-link" href="#albania" data-name="albania">Албания</a>
             </li>
             <li class="tab-countries__item">
-              <a class="tab-countries__item-link" href="#macedonia">Македония</a>
+              <a class="tab-countries__item-link" href="#macedonia" data-name="macedonia">Македония</a>
             </li>
             <li class="tab-countries__item">
-              <a class="tab-countries__item-link" href="#montenegro">Черногория</a>
+              <a class="tab-countries__item-link" href="#montenegro" data-name="montenegro">Черногория</a>
             </li>
             <li class="tab-countries__item">
-              <a class="tab-countries__item-link" href="#croatia">Хорватия</a>
+              <a class="tab-countries__item-link" href="#croatia" data-name="croatia">Хорватия</a>
             </li>
           </ul>
         </div>
@@ -278,7 +278,7 @@
             </div>
           </div>
 
-          <div class="tab-content__item tab-active" id="albania">
+          <div class="tab-content__item tab-content__item--hide" id="albania">
             <div class="tab-content__wrapper-text">
               <h2 class="tab-content__title">Албания</h2>
               <p class="tab-content__text">
@@ -315,7 +315,7 @@
             </div>
           </div>
 
-          <div class="tab-content__item tab-active" id="macedonia">
+          <div class="tab-content__item tab-content__item--hide" id="macedonia">
             <div class="tab-content__wrapper-text">
               <h2 class="tab-content__title">Македония</h2>
               <p class="tab-content__text">
@@ -351,7 +351,7 @@
             </div>
           </div>
 
-          <div class="tab-content__item tab-active" id="montenegro">
+          <div class="tab-content__item tab-content__item--hide" id="montenegro">
             <div class="tab-content__wrapper-text">
               <h2 class="tab-content__title">Черногория</h2>
               <p class="tab-content__text">
@@ -382,7 +382,7 @@
             </div>
           </div>
 
-          <div class="tab-content__item tab-active" id="croatia">
+          <div class="tab-content__item tab-content__item--hide" id="croatia">
             <div class="tab-content__wrapper-text">
               <h2 class="tab-content__title">Хорватия</h2>
               <p class="tab-content__text">
@@ -424,7 +424,7 @@
       </div>
       <!-- </div> -->
 
-      <div class="countries__price price container">
+      <div class="countries__price price container" id="price">
         <div class="price__content">
           <h2 class="price__title">Цены</h2>
           <p class="price__text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от
@@ -502,19 +502,20 @@
     <section class="feedback">
       <div class="container">
         <div class="feedback__wrapper">
-          <form class="feedback__form form" method="get" action="https://echo.htmlacademy.ru">
+          <form class="feedback__form form" method="POST" action="https://echo.htmlacademy.ru">
             <h2 class="form__title">У Вас остались вопросы?</h2>
             <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             <div class="form__wrapper">
               <label class="form__label form__label--tel" for="tel">
-                <input class="form__input form__input--tel" type="text" name="tel" id="tel" pattern="[0-9]{10}"
+                <input class="form__input form__input--tel form__input--tel-feedback" type="text" name="tel" id="tel"
                   placeholder="Введите 10 цифр номера" required>
               </label>
               <label class="form__label" for="email">
-                <input class="form__input" type="text" name="email" id="email" placeholder="E-mail">
+                <input class="form__input form__input--email form__input--email-feedback" type="text" name="email"
+                  id="email" placeholder="E-mail">
               </label>
             </div>
-            <button class="form__button button" type="submit">отправить</button>
+            <button class="form__button form__button--feedback button" type="submit">отправить</button>
           </form>
         </div>
       </div>
@@ -611,37 +612,46 @@
     </div>
   </footer>
 
-  <div class="popup">
-    <div class="popup__photo">
-      <picture>
-        <source srcset="img/modal-desktop@1x.webp 1x, img/modal-desktop@2x.webp 2x" type="image/webp">
-        <img class="popup__img" src="img/modal-desktop@1x.jpg" srcset="img/modal-desktop@2x.jpg" width="338"
-          height="444" alt="Изображение океана">
-      </picture>
-    </div>
-    <div class="popup__wrapper">
-      <button class="popup__close" aria-label="Закрыть форму заявки">
-        <svg class="popup__close-icon" width="26" height="20">
-          <use xlink:href="#icon-close"></use>
-        </svg>
-      </button>
-      <form class="popup__form form form--popup" method="get" action="https://echo.htmlacademy.ru">
-        <h2 class="form__title">Купить тур</h2>
-        <div class="form__wrapper form__wrapper--popup">
-          <label class="form__label form__label--tel form__label--popup" for="popup-tel">
-            <input class="form__input form__input--tel" type="text" name="tel" id="popup-tel" pattern="[0-9]{10}"
-              placeholder="Введите 10 цифр номера" required>
-          </label>
-          <label class="form__label form__label--popup" for="popup-email">
-            <input class="form__input" type="text" name="email" id="popup-email" placeholder="E-mail">
-          </label>
-        </div>
-        <button class="form__button form__button--popup button" type="submit">отправить</button>
-      </form>
+  <div class="overlay overlay--form">
+    <div class="popup">
+      <div class="popup__photo">
+        <picture>
+          <source srcset="img/modal-desktop@1x.webp 1x, img/modal-desktop@2x.webp 2x" type="image/webp">
+          <img class="popup__img" src="img/modal-desktop@1x.jpg" srcset="img/modal-desktop@2x.jpg" width="338"
+            height="444" alt="Изображение океана">
+        </picture>
+      </div>
+      <div class="popup__wrapper">
+        <button class="popup__close" aria-label="Закрыть форму заявки">
+          <svg class="popup__close-icon" width="26" height="26">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </button>
+        <form class="popup__form form form--popup" method="POST" action="https://echo.htmlacademy.ru">
+          <h2 class="form__title">Купить тур</h2>
+          <div class="form__wrapper form__wrapper--popup">
+            <label class="form__label form__label--tel form__label--popup" for="popup-tel">
+              <input class="form__input form__input--tel form__input--tel-buy" type="text" name="tel" id="popup-tel"
+                placeholder="Введите 10 цифр номера" required>
+            </label>
+            <label class="form__label form__label--popup" for="popup-email">
+              <input class="form__input form__input-email form__input-email-buy" type="text" name="email"
+                id="popup-email" placeholder="E-mail">
+            </label>
+          </div>
+          <button class="form__button form__button--popup form__button--buy button" type="submit">отправить</button>
+        </form>
+      </div>
     </div>
   </div>
 
-<script src="js/script.min.js"></script>
+  <div class="overlay overlay--success">
+    <div class="message-form">
+      <p class="message-form__text">Форма успешно отправлена, спасибо! :)</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 
 </body>
 

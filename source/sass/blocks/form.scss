@@ -97,6 +97,22 @@
   padding-left: 49px;
 }
 
+.form__input--error {
+  border: 1px solid $accent-main;
+  position: relative;
+
+  &::before {
+    @include text(12px, 15px);
+    font-family: $font-main;
+    font-weight: 400;
+    position: absolute;
+    content: "Данные не верны";
+    top: 0;
+    left: 0;
+    max-width: 80%;
+  }
+}
+
 .form__label {
   @media (max-width: $width-mobile-max) {
     margin: 0 auto;
