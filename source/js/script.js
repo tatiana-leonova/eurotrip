@@ -29,9 +29,9 @@ const buttonFeedbackSubmitForm = document.querySelector(
   ".form__button--feedback"
 );
 const overlaySuccess = document.querySelector(".overlay--success");
-const phoneFeedback = document.querySelector(".form__input--tel-feedback");
+const phoneFeedback = document.querySelector(".form__input--phone-feedback");
 const emailFeedback = document.querySelector(".form__input--email-feedback");
-const phoneBuy = document.querySelector(".form__input--tel-buy");
+const phoneBuy = document.querySelector(".form__input--phone-buy");
 const emailBuy = document.querySelector(".form__input-email-buy");
 
 buttonBuySubmitForm.addEventListener("click", onBuySubmitClick);

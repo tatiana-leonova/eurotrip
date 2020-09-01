@@ -113,7 +113,7 @@
   left: 11px;
 }
 
-.page-footer__tel {
+.page-footer__phone {
   @include text(16px, 34px);
   font-weight: 400;
   color: $accent-main;
@@ -137,7 +137,7 @@
   }
 }
 
-.page-footer__tel-icon {
+.page-footer__phone-icon {
   position: absolute;
   top: 0;
   left: 11px;

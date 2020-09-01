@@ -127,7 +127,8 @@
   text-transform: uppercase;
 }
 
-.tours__item:hover .tours__item-hvr {
+.tours__item:hover .tours__item-hvr,
+.tours__item:focus .tours__item-hvr {
   @media (min-width: $width-desktop) {
     display: block;
   }
