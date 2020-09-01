@@ -1,9 +1,19 @@
 .page-header__wrapper {
   margin-top: 38px;
   margin-bottom: 29px;
+  position: relative;
 
   @media (max-width: $width-tablet-max) {
     margin-top: 16px;
     margin-bottom: 7px;
+  }
+
+  @media (min-width: $width-desktop-min) {
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 29px;
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 1320px;
   }
 }
