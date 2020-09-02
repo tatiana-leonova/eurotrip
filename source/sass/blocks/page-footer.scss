@@ -119,18 +119,18 @@
 
 
 .page-footer__email-text--1 {
-    @media (max-width: $width-mobile-max) {
-      display: none;
-    }
-  }
-
-  .page-footer__email-text--2 {
+  @media (max-width: $width-tablet-max) {
     display: none;
-
-    @media (max-width: $width-mobile-max) {
-      display: block;
-    }
   }
+}
+
+.page-footer__email-text--2 {
+  display: none;
+
+  @media (max-width: $width-tablet-max) {
+    display: block;
+  }
+}
 
 .page-footer__phone {
   @include text(16px, 34px);

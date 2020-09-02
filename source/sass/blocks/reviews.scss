@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     width: 808px;
     min-height: 596px;
-    background-position: 27% 100%;
+    background-position: 27% top;
     margin: 0 auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -57,8 +57,7 @@
     @media (max-width: $width-tablet-max) {
       background-image: url("../img/country-albania-tablet@1x.jpg");
 
-      @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/country-albania-tablet@2x.jpg");
       }
     }
@@ -167,7 +166,11 @@
   @include text(14px, 28px);
   font-weight: 400;
   letter-spacing: -0.408333px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
+
+  @media (max-width: $width-tablet-max) {
+    margin-bottom: 35px;
+  }
 
   @media (max-width: $width-mobile-max) {
     margin-bottom: 15px;

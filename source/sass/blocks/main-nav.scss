@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  flex-wrap: wrap;
 
   @media (max-width: $width-tablet-max) {
     flex-direction: column;
@@ -28,13 +29,11 @@
   display: flex;
   justify-content: flex-end;
   width: 900px;
-  // position: relative;
 
   @media (max-width: $width-tablet-max) {
     flex-direction: column;
     position: absolute;
     top: 0;
-    //  right: -20px;
     right: 0;
     width: 50%;
     background-color: $white;
@@ -42,36 +41,17 @@
     padding-top: 135px;
     padding-bottom: 70px;
     z-index: 2;
-    //  border-bottom: 1px solid $light;
   }
 
   @media (max-width: $width-mobile-max) {
     width: 100%;
   }
-
 }
 
 .main-nav__list {
   @include no-list;
   display: flex;
-
-  // @media (max-width: $width-tablet-max) {
-  //   flex-direction: column;
-  //   position: absolute;
-  //   top: 0;
-  //   right: -20px;
-  //   // width: 320px;
-  //   width: 50%;
-  //   min-height: 500px;
-  //   background-color: $white;
-  //   animation: emersion 0.5s;
-  //   padding-top: 135px;
-  //   padding-bottom: 50px;
-  // }
-
-  // @media (max-width: $width-mobile-max) {
-  //   width: 100%;
-  // }
+  flex-wrap: wrap;
 }
 
 .main-nav__item {
@@ -164,7 +144,6 @@
   @media (max-width: $width-tablet-max) {
     position: absolute;
     top: -15px;
-    // right: -20px;
     right: 0;
     display: block;
     width: 73px;
@@ -175,7 +154,6 @@
     border: none;
 
     @media (max-width: $width-mobile-max) {
-      // right: -15px;
       right: 0;
       width: 50px;
       padding: 20px 10px;
@@ -198,22 +176,12 @@
   }
 }
 
-.main-nav--opened .main-nav__toggle {
-  @media (max-width: $width-tablet-max) {
-    width: 21px;
-    height: 20px;
-    background-image: url("../img/menu-open.svg");
-    background-repeat: no-repeat;
-  }
-}
-
 .main-nav--closed .main-nav__wrapper {
   @media (max-width: $width-tablet-max) {
     display: none;
   }
 }
 
-// Нужный класс
 .main-nav--opened .main-nav__toggle {
   @media (max-width: $width-tablet-max) {
     background-color: $white;
@@ -238,14 +206,12 @@
   }
 }
 
-// Нужный класс
 .main-nav--opened .main-nav__list {
   @media (max-width: $width-tablet-max) {
     display: block;
   }
 }
 
-//Убирает иконку меню когда JS не работает
 .main-nav--nojs .main-nav__toggle {
   @media (max-width: $width-tablet-max) {
     display: none;
